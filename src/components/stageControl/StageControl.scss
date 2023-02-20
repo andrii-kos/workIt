@@ -1,0 +1,85 @@
+@import '..//../styles/variables';
+
+.card {
+  &__controll {
+    margin-top: 1em;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    button {
+      position: relative;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+  &__stageIndicator {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-left: 5px;
+    margin: 0 10px;
+    color: #fff;
+    background-color: $light-green;
+    box-shadow: $shadow;
+    border-radius: 7px;
+    transition: all .2s;
+    &:hover {
+      box-shadow: $shadow-hower;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+        cursor: pointer;
+        padding: .75em;
+        margin: 0;
+        transition: all .2s;
+       
+        &:nth-child(1) {
+          border-top-left-radius: 7px;
+          border-top-right-radius: 7px;
+        }
+        &:nth-last-child(1) {
+          border-bottom-left-radius:  7px;
+          border-bottom-right-radius: 7px;
+        }
+        &:hover {
+          background-color: $dark-green;
+        }
+      }
+    }
+    &__add {
+      padding-left: 5px;
+      font-size: 30px;
+      font-weight: 300;
+      cursor: pointer;
+      transition: all .2s;
+      &:hover {
+        color: $beige;
+      }
+    }
+  }
+  &__selectStage {
+    position: relative;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 190%;
+    color:red;
+    &:hover ~ .card__dropDownContent {
+      display: none;
+      color:green
+    }
+  }
+  &__dropDownContent {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100px;
+    left: 30px;    
+    display: none;
+    transition: all .5s;
+  }
+}

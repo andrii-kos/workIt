@@ -1,0 +1,30 @@
+@import '..//../styles/variables';
+header {
+  .headerContainer {
+    padding: 2em;
+    background-color: $dark-green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      font-family: Montserrat;
+      color: $light-beige;;
+      margin: 0
+    }
+    button {
+      background: none;
+      font-family: Montserrat bold;
+      border: 2px solid $light-beige;
+      padding: 0.5em;
+      height: fit-content;
+      color: $light-beige;
+      border-radius: 4px;
+      transition: all .2s;
+      cursor: pointer;
+      &:hover {
+        border: 2px solid $beige;
+        color: $beige;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import '..//../styles/variables';
+
+.card {
+  &__questions {
+    h3 {
+      margin: 1em 0 0 0;
+    }
+    div {
+      margin-top: 0.5em;
+      span {
+        font-family: Lora italic;
+        font-weight: bold;
+      }
+    }
+    
+  }
+  
+  .buttonsWrapper {
+    display: flex;
+    column-gap: .75em;
+    margin-top: 1.5em;
+    
+    
+    button {
+      background-color: $light-beige;
+      padding: .5em;
+      border: 1.5px solid $beige;
+      border-radius: 12px;
+      color: $dark-green;
+      box-shadow: $shadow;
+      transition: all .2s;
+      &:hover {
+        box-shadow: $shadow-hower;
+      }
+    }
+  }
+}

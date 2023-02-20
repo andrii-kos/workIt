@@ -1,0 +1,19 @@
+.cards__container {
+  margin: 2em;
+  column-count: 3;
+}
+@media (min-width: 600px) {
+  .cards__container {
+         column-count: 1;
+  }
+}
+@media (min-width: 900px) {
+  .cards__container {
+         column-count: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .cards__container {
+         column-count: 3;
+  }
+}

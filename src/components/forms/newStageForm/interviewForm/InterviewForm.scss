@@ -1,0 +1,23 @@
+@import '..//..//../../styles/variables';
+
+.form {
+  &__question-answer-list {
+    padding: 1em;
+    border-radius: 4px;
+    background-color: $beige;
+    list-style: none;
+  }
+  &__new-question {
+    margin-top: 2em;
+    cursor: pointer;
+    padding: 1em;
+    font-family: Montserrat;
+    border: 2px solid $beige;
+    border-radius: 4px;
+    background-color: $light-beige;
+    transition: all ease-in-out .2s;
+    &:hover {
+      background-color: $beige;
+    }
+  }
+}

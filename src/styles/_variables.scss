@@ -1,0 +1,23 @@
+@font-face {
+  font-family: Lora regular;
+  src: url(..//resources/fonts/Lora-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(..//resources/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat bold;
+  src: url(..//resources/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Lora italic;
+  src: url(..//resources/fonts/Lora-Italic.ttf);
+}
+
+$dark-green: #1C6758;
+$light-green: #3D8361;
+$beige: #D6CDA4;
+$light-beige: #EEF2E6;
+$shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-hower: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);

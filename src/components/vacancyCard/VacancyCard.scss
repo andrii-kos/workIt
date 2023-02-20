@@ -1,0 +1,61 @@
+@import '..//../styles/variables';
+
+.card {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 1em;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  width: auto;
+  min-width: fill-available;
+  font-size: 100%;
+  box-shadow: $shadow;
+  border-radius: 10px;
+  border: 2px solid $light-green;
+  padding: 25px;
+  background-color: $light-beige;
+  transition: all .2s;
+  &::nth-child(3n+1) { order: 1; }
+  &::nth-child(3n+2) { order: 2; }
+  &::nth-child(3n)   { order: 3; }
+  // &:last-child {display: grid;}
+  &:hover {
+    box-shadow: $shadow-hower;
+  }
+  &__vacName {
+    font-size: 150%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: Montserrat bold;
+  }
+  &__cityName {
+    line-height: 1;
+    font-size: 80%;
+  }
+  &__recName {
+    margin-top: 1em;
+    a {
+      font-family: Lora italic;
+      color: $light-green;
+      font-size: 120%;
+      text-decoration: none;
+      transition: all .2s;
+
+      &:hover {
+        color: $dark-green
+      }
+    }
+    
+  
+  }
+  &__expSalary {
+    margin-top: 1em;
+    color: $dark-green;
+    font-family: Montserrat bold;
+  }
+  
+  &__desctiprion {
+    margin-top: 1em;
+  }
+}
+
