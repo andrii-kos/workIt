@@ -14,239 +14,67 @@
       "id": "e358e483-4a5c-48fd-8b8c-e6138956d7a7",
       "stages": [
         {
-          "stageName": "Application",
-          "id": "c182fe5f-1fb8-4f57-82aa-0834b348c176",
-          "date": "2023-02-17T10:13:59.510Z",
-          "stageType": "Application"
+          "id": "e9dfc372-aac0-4dc8-9278-f35b2410372f",
+          "date": "2023-03-01T12:55:09.966Z",
+          "location": "",
+          "questionsAndAnswers": [
+            {
+              "question": "",
+              "answer": ""
+            }
+          ],
+          "notes": "",
+          "stageType": "Application",
+          "interviewType": "",
+          "stageName": "HR Interivew",
+          "interviewerNames": [
+            ""
+          ]
         },
         {
-          "id": "d2d6bfa4-0b0d-4c92-a704-789d46bac67c",
-          "date": "2023-02-17T12:41:39.183Z",
-          "location": "asdf",
-          "questionAnswer": [
-            [
-              "dfsaf",
-              "dfasdf"
-            ]
-          ],
-          "notes": "sadf",
+          "id": "3fc230b3-ba19-41dc-bb19-0dea55bb62cb",
+          "date": "2023-03-01T16:28:05.620Z",
+          "stageName": "sdgsdfg",
           "stageType": "Interview",
-          "stageName": "asdf",
-          "interviewerNames": "afsdaf"
-        },
-        {
-          "id": "04217ab0-08a9-4593-87b5-eb692b7c4813",
-          "date": "2023-02-17T12:47:36.193Z",
-          "location": "sadf",
-          "questionAnswer": [
-            [
-              "fdasf",
-              "dsaf"
-            ],
-            [
-              "dsafasdf",
-              "asdfref"
-            ],
-            [
-              "",
-              ""
-            ]
+          "location": "dfgdsfgre",
+          "questionsAndAnswers": [
+            {
+              "question": "sdfgtrg",
+              "answer": "sdfgertg"
+            }
           ],
-          "notes": "fdadf",
-          "stageType": "Interview",
-          "stageName": "sdgfsdfg",
-          "interviewerNames": "dfdasd"
-        },
-        {
-          "id": "989d1ac7-4540-4ad4-81cd-d639dca9dd92",
-          "date": "2023-02-17T14:12:40.176Z",
-          "location": "dsag",
-          "questionAnswer": [
-            [
-              "gdsfg",
-              "sdfg"
-            ]
-          ],
-          "notes": "sdfgerw",
-          "stageType": "Interview",
-          "stageName": "sdgfsdfg",
-          "interviewerNames": "gfsd"
-        },
-        {
-          "id": "f7889b4d-b156-45bd-84c3-b59716dfa9ce",
-          "date": "2023-02-17T14:13:46.236Z",
-          "location": "asdf",
-          "questionAnswer": [
-            [
-              "dasf",
-              "dfasdf"
-            ]
-          ],
-          "notes": "dfasdf",
-          "stageType": "Interview",
-          "stageName": "adsf",
-          "interviewerNames": "fdasf"
-        },
-        {
-          "id": "fd9b44f1-f84d-476a-be9e-1209bb102123",
-          "date": "2023-02-17T15:03:54.224Z",
-          "location": "sdfg",
-          "questionAnswer": [
-            [
-              "gfsdg",
-              "gfsdg"
-            ]
-          ],
-          "notes": "fgfs",
-          "stageType": "Interview",
-          "stageName": "# application",
-          "interviewerNames": "fsdg"
-        },
-        {
-          "id": "8822ee6a-e092-463c-99b4-c09fd8849996",
-          "date": "2023-02-17T17:06:24.897Z",
-          "location": "Kiev",
-          "questionAnswer": [
-            [
-              "a;sldfja;lsdjfa;lsdjf",
-              ";slfdjgksd;fig"
-            ],
-            [
-              "",
-              ""
-            ]
-          ],
-          "notes": "gfsdgsertgsdfg",
-          "stageName": "First Interview With HR Department and CEO",
-          "interviewerNames": "Anna Rudenko"
-        },
-        {
-          "id": "0ec8073a-31a7-4b57-bacb-6b19f73ead8f",
-          "date": "2023-02-17T17:47:11.065Z",
-          "location": "sfdgs",
-          "questionAnswer": [
-            [
-              "dferwf",
-              "gdfsfgre"
-            ],
-            [
-              "dfggfsdggggggggggggggggggggggggggggggggggggg",
-              "dsfgdfg"
-            ],
-            [
-              "",
-              ""
-            ]
-          ],
-          "notes": "dgbfd",
-          "stageName": "sdg",
-          "interviewerNames": "sdfg"
-        },
-        {
-          "id": "c8226c90-6781-49dc-ac31-9c48f4034798",
-          "date": "2023-02-18T09:46:28.407Z",
-          "location": "gfsdf",
-          "questionAnswer": [
-            [
-              "gergfdg",
-              "sgfsd"
-            ],
-            [
-              "",
-              ""
-            ]
-          ],
-          "notes": "gwe5gdsfgerhfds",
-          "stageName": "blah test",
-          "interviewerNames": "gfsdg"
-        },
-        {
-          "id": "30a384a1-830b-45a2-b5b1-209b445ba0db",
-          "date": "2023-02-18T09:48:59.962Z",
-          "location": "sdfgsdfh",
-          "questionAnswer": [
-            [
-              "sdfgsdfg",
-              "sdfgewrg"
-            ]
-          ],
-          "notes": "fdsgerg",
-          "stageName": "11111",
-          "interviewerNames": "sdghsdfhgsdfg"
-        },
-        {
-          "id": "2df850e5-ab20-45ea-9a8d-d026ed89af9f",
-          "date": "2023-02-18T09:50:03.036Z",
-          "location": "sdg",
-          "questionAnswer": [
-            [
-              "sdfg",
-              "sdfgsdfg"
-            ]
-          ],
-          "notes": "fsg",
-          "stageName": "2222",
-          "interviewerNames": "sdfg"
-        },
-        {
-          "id": "a4284ff1-8719-4dc3-8199-fcc95906aed3",
-          "date": "2023-02-18T09:50:58.433Z",
-          "location": "adsf",
-          "questionAnswer": [
-            [
-              "asdf",
-              "asdfa"
-            ]
-          ],
-          "notes": "asdfaef",
-          "stageName": "33333",
-          "interviewerNames": "fasdf"
-        },
-        {
-          "id": "d1f35dc9-158b-4cc3-8d6f-5082b0db7664",
-          "date": "2023-02-18T09:51:29.052Z",
-          "location": "sfdgsd",
-          "questionAnswer": [
-            [
-              "sdfgsdfgdsfg",
-              "sdfgdsfg"
-            ]
-          ],
-          "notes": "sdfgdrgrfscv",
-          "stageName": "4444",
-          "interviewerNames": "sdfg"
-        },
-        {
-          "id": "037d69be-a284-43e5-b13d-dafa4795a825",
-          "date": "2023-02-18T10:01:13.937Z",
-          "location": "gdg",
-          "questionAnswer": [
-            [
-              "gdfgrt",
-              "gdgf"
-            ]
-          ],
-          "notes": "gdftsftgghdrt",
-          "stageName": "sdg",
-          "interviewerNames": "hdh"
-        },
-        {
-          "id": "5a641aca-0ffd-46f1-afd3-5342adf377e4",
-          "date": "2023-02-19T18:44:54.171Z",
-          "location": "hjf",
-          "questionAnswer": [
-            [
-              "jhfj",
-              "dghjetyj"
-            ]
-          ],
-          "notes": "jhfjytj",
-          "stageName": "fghj",
-          "interviewerNames": "jhff"
+          "notes": "sdfgertg",
+          "interviewType": "HR",
+          "interviewerNames": [
+            "234213452345"
+          ]
         }
       ],
-      "currentStageId": "d2d6bfa4-0b0d-4c92-a704-789d46bac67c",
+      "currentStageId": "3fc230b3-ba19-41dc-bb19-0dea55bb62cb",
       "date": "2023-02-17T10:13:59.510Z"
+    },
+    {
+      "vacancyName": "Ssfgdfg",
+      "stageType": "Offer",
+      "companyName": "sdfgsdgf",
+      "location": "sdfgdf",
+      "salaryExpectation": "4545",
+      "recruiterName": "gsdfg",
+      "recruiterLinkedIn": "gsdfg",
+      "vacancyDescription": "gsdfgsdfg",
+      "coverLeterRecruiterMessage": "gdtegweg",
+      "stageName": "sfgsdfg",
+      "id": "4d573a79-c429-4c0a-913d-cde5eafb2e1b",
+      "stages": [
+        {
+          "stageName": "sfgsdfg",
+          "id": "2b7ebc6f-b4ed-409a-8d7a-fbc763332442",
+          "date": "2023-03-03T20:08:01.139Z",
+          "stageType": "Offer"
+        }
+      ],
+      "currentStageId": "2b7ebc6f-b4ed-409a-8d7a-fbc763332442",
+      "date": "2023-03-03T20:08:01.139Z"
     }
   ]
 }

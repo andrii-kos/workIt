@@ -1,11 +1,8 @@
-
-// light: '#EEEEEE',
-// main: '#D6CDA4',
-// dark: '#3D8361',
-// contrastText: '#fff',
-// contrastText: '#EEF2E6',
 import { createTheme } from '@mui/material/styles';
-const Montserrat =  "Montserrat bold";
+
+const Montserrat =  "Montserrat";
+const Lora = "Lora";
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -22,19 +19,25 @@ const theme = createTheme({
     },
   },
   typography: {
+    fontFamily: Montserrat,
     vacancyName: {
-      fontFamily: Montserrat,
-      color: 'fff',
-      fontSize: '150%',
       fontWeight: 'bold',
+      //fontStyle: 'italic',
+      //fontWeight: 'bold',
+      fontSize: '150%',
       textTransform: 'uppercase',
-      textDecoration: 'underline'
     },
-    vacancyCompany: {
-      color: 'fff',
-      fontSize: '100%'
+    salaryExpectation: {
+      display: 'block',
+      textDecoration: 'underline #3D8361',
+      fontWeight: 'bold',
+    },
+    stageType: {
+      color: '#3D8361',
+      fontWeight: 'bold',
     }
   }
+  
 });
 
 export default theme

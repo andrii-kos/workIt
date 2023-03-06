@@ -1,8 +1,8 @@
-import InputField from "..//../formFields/InputField";
-import SelectField from "..//../formFields/SelectField";
+import InputField from "../../formFields/InputField";
+import SelectField from "../../formFields/SelectField";
 import { useSelector } from 'react-redux';
 import { Box } from "@mui/system";
-import stageFormModel from "..//formModel/stageFormModel";
+import stageFormModel from "../formModel/stageFormModel";
 
 const IntroForm = () => {
   const stageTypes = useSelector(state => state.vacancies.stageTypes)
@@ -19,11 +19,11 @@ const IntroForm = () => {
         data={stageTypes} 
         name={stageType.name} 
         label={stageType.label} 
-        />
+      />
       <InputField 
         name={stageName.name} 
         label={stageName.label} 
-        />
+      />
     </Box>
   )
 }

@@ -3,9 +3,9 @@ import { TextField, Box } from '@mui/material';
 
 const InputField = (props) => {
   const [field, meta] = useField(props);
-  
+  const { touched, error }= meta;
+
   function _renderHelperText() {
-    const { touched, error }= meta;
     if (touched && error) {
       return error;
     }
@@ -16,6 +16,7 @@ const InputField = (props) => {
     <Box>
       <TextField 
         fullWidth
+        size="medium"
         type="text"
         error={meta.touched && meta.error && true}
         helperText={_renderHelperText()}

@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import vacancies from '..//components/vacanciesCards/VacancySlice'
+import vacancies from '../components/vacanciesCards/VacancySlice'
 
 
 const store = configureStore({

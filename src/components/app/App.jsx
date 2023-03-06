@@ -1,10 +1,10 @@
 import './App.scss';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from '..//../styles/theme.js';
+import theme from '../../styles/theme';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainPage from '..//pages/MainPage';
-import NewVacancyFormPage from '..//pages/NewVacancyFormPage';
-import NewStagePage from '..//pages/NewStagePage';
+import MainPage from '../pages/MainPage';
+import NewVacancyFormPage from '../pages/NewVacancyFormPage';
+import NewStagePage from '../pages/NewStagePage';
 
 function App() {
   return (

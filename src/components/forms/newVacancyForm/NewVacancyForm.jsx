@@ -60,7 +60,7 @@ const NewVacancyForm = () => {
       onSubmit={onSubmit}
     >
       <Form>
-        <Typography py={2} variant='h3'>New Vacancy Form</Typography>
+        <Typography py={2} variant="h3">New Vacancy Form</Typography>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} xl={4}>
             <InputField name={vacancyName.name} label={vacancyName.label} />
@@ -93,7 +93,7 @@ const NewVacancyForm = () => {
             <InputField multiline name={coverLeterRecruiterMessage.name} label={coverLeterRecruiterMessage.label} />
           </Grid>
           <Grid item xs={12} sm={12} xl={12}>
-            <Button variant='contained' type="submit">Submit</Button>
+            <Button variant="contained" type="submit">Submit</Button>
           </Grid>
         </Grid>
       </Form>

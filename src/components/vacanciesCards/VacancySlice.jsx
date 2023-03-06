@@ -3,7 +3,7 @@ import useHttp from '../../hooks/useHttp';
 
 const initialState = {
   vacancies: [],
-  stageTypes: ['Interview', 'Offer', 'Application'],
+  stageTypes: ['Application', 'Interview', 'Offer', 'Rejection'],
   loadingStatus: 'iddle',
   postingStatus: 'iddle',
   updatingStatus: 'iddle'
