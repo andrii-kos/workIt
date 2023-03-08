@@ -5,7 +5,7 @@ import { Box } from "@mui/system";
 import stageFormModel from "../formModel/stageFormModel";
 
 const IntroForm = () => {
-  const stageTypes = useSelector(state => state.vacancies.stageTypes)
+  const stageTypes = ['Application', 'Interview', 'Offer', 'Rejection'];
   const {
     formField: {
       stageName,

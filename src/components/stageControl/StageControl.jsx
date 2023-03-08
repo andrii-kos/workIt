@@ -11,9 +11,11 @@ import {
   Paper,
   Popper,
   MenuItem,
-  MenuList
+  MenuList,
+  Typography
  } from '@mui/material';
-import { ArrowDropDown, LibraryAddSharp, PersonSearch, Hail } from '@mui/icons-material/';
+
+import { ArrowDropDown, LibraryAddSharp, PersonSearch, Hail, PersonAddAlt1, PersonRemoveAlt1 } from '@mui/icons-material/';
 
 
 const StageControl = ({id}) => {
@@ -21,18 +23,18 @@ const StageControl = ({id}) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const [ open, setOpen ] = useState(false)
+  const [ open, setOpen ] = useState(false);
   const anchorRef = useRef(null);
 
   const vacancy = useSelector(state => state.vacancies.vacancies.filter(elem => elem.id === id)[0]);
-  const { stages, currentStageId } = vacancy
-  const currentStageIndex = stages.map(elem => elem.id).indexOf(currentStageId)
-  const [ selectedId, setSelectedId ] = useState(currentStageIndex)
+  const { stages, currentStageId } = vacancy;
+  const currentStageIndex = stages.map(elem => elem.id).indexOf(currentStageId);
+  const [ selectedId, setSelectedId ] = useState(currentStageIndex);
   
 
   const handleClick = (event) => {
     console.info(`You clicked ${stages}`);
-  }
+  };
 
   const handleMenuItemClick = (event, index) => {
     dispatch(updateCurrentStageId({id, vacancy, currentStageId: stages[index].id}))
@@ -54,7 +56,23 @@ const StageControl = ({id}) => {
 
   const handleNavigate = () => {
     navigate(`newStage/${id}`)
+  };
+
+  const renderMenuItemIcon = (stageType) => {
+    switch(stageType) {
+      case 'Interview':
+        return <PersonSearch />
+      case 'Application':
+        return <Hail />
+      case 'Offer':
+        return <PersonAddAlt1 />
+      case 'Rejection':
+        return <PersonRemoveAlt1 />
+      default:
+        return null
+    }
   }
+
   return (
     <CardActions sx={{p: 0, my: 1}}>
       <ButtonGroup ref={anchorRef} aria-label="split button">
@@ -114,7 +132,8 @@ const StageControl = ({id}) => {
                       selected={index === selectedId}
                       onClick={(event) => handleMenuItemClick(event, index)}
                     >
-                      {stageType === 'Interview' ? <PersonSearch /> : <Hail />  }{` ${stageName}`}
+                      {renderMenuItemIcon(stageType)}
+                      <Typography ml={1}>{stageName}</Typography>
                     </MenuItem>
                   ))}
                 </MenuList>

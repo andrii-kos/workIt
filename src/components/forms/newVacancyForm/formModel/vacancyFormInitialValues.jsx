@@ -3,29 +3,29 @@ import vacancyFormModel from './vacancyFormModel';
 const {
   formField: {
     vacancyName,
-    stageType,
+    vacancyURL,
+    workingModel,
     company,
     location,
+    businessModel,
     salaryExpectation,
-    recruiterName,
-    recruiterLinkedIn,
+    hiringManager,
     vacancyDescription,
-    coverLeterRecruiterMessage,
-    stageName,
+    vacancyPriority,
   }
 } = vacancyFormModel;
 
 const vacancyFormInitialValues = {
   [vacancyName.name]: '',
-  [stageType.name]: '',
+  [vacancyURL.name]: '',
+  [workingModel.name]: '',
   [company.name]: '',
   [location.name]: '',
+  [businessModel.name]: '',
   [salaryExpectation.name]: '',
-  [recruiterName.name]: '',
-  [recruiterLinkedIn.name]: '',
+  [hiringManager.name]: '',
   [vacancyDescription.name]: '',
-  [coverLeterRecruiterMessage.name]: '',
-  [stageName.name]: ''
+  [vacancyPriority.name]: 0,
 }
 
 export default vacancyFormInitialValues

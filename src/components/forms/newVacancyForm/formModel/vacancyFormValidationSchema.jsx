@@ -4,46 +4,46 @@ import vacancyFormModel from './vacancyFormModel';
 const {
   formField: {
     vacancyName,
-    stageType,
+    vacancyURL,
+    workingModel,
     company,
     location,
+    businessModel,
     salaryExpectation,
-    recruiterName,
-    recruiterLinkedIn,
+    hiringManager,
     vacancyDescription,
-    coverLeterRecruiterMessage,
-    stageName,
+    vacancyPriority,
   }
 } = vacancyFormModel;
 
 const vacancyFormValidationSchema = Yup.object({
     [vacancyName.name]: Yup.string()
-      .min(2, vacancyName.minErrorMsg)
+      .min(4, vacancyName.minErrorMsg)
       .required(vacancyName.requiredErrorMsg),
-    [stageType.name]: Yup.string()
-      .required(stageType.requiredErrorMsg),
+    [vacancyURL.name]: Yup.string()
+      .min(4, vacancyURL.minErrorMsg)
+      .required(vacancyURL.requiredErrorMsg),
+    [workingModel.name]: Yup.string()
+      .required(workingModel.requiredErrorMsg),
     [company.name]: Yup.string()
-      .min(2, company.minErrorMsg)
+      .min(4, company.minErrorMsg)
       .required(company.requiredErrorMsg),
     [location.name]: Yup.string()
-      .min(2, location.minErrorMsg)
+      .min(4, location.minErrorMsg)
       .required(location.requiredErrorMsg),
+    [businessModel.name]: Yup.string()
+      .required(businessModel.requiredErrorMsg),
     [salaryExpectation.name]: Yup.number()
       .typeError(salaryExpectation.numberErrorMsg)
       .required(salaryExpectation.requiredErrorMsg),
-    [recruiterName.name]: Yup.string()
-      .min(2, recruiterName.minErrorMsg)
-      .required(recruiterName.requiredErrorMsg),
-    [recruiterLinkedIn.name]: Yup.string()
-      .matches(/^[\D]/, 'Must Be Text'),
-    [stageName.name]: Yup.string()
-      .required(stageName.requiredErrorMsg),
+    [hiringManager.name]: Yup.string()
+      .min(4, hiringManager.minErrorMsg)
+      .required(hiringManager.requiredErrorMsg),
     [vacancyDescription.name]: Yup.string()
       .required(vacancyDescription.requiredErrorMsg)
-      .min(2, vacancyDescription.minErrorMsg),
-    [coverLeterRecruiterMessage.name]: Yup.string()
-      .required(coverLeterRecruiterMessage.requiredErrorMsg)
-      .min(2, coverLeterRecruiterMessage.minErrorMsg),
+      .min(4, vacancyDescription.minErrorMsg),
+    [vacancyPriority.name]: Yup.number()
+      .required(vacancyDescription.requiredErrorMsg)
   })
 
   export default vacancyFormValidationSchema

@@ -40,10 +40,9 @@ const SelectField = (props) => {
       <FormControl error={meta.touched && meta.error && true}>
         <FormLabel id="demo-radio-buttons-group-label">{label}</FormLabel>
         <RadioGroup
+          row
           value={field.value}
-          row 
           aria-labelledby="demo-radio-buttons-group-label"
-          defaultValue=""
           name="radio-buttons-group"
         >
           {radioElementsRender(data)}

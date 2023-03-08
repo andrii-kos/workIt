@@ -15,8 +15,8 @@ import { v4 } from 'uuid';
 import { Box, Button, Grid, Typography } from '@mui/material';
 import IntroForm from './introForm/IntroForm';
 
-const NewStageForm = () => {
-  const { vacancyId } = useParams();
+const NewStageForm = (props) => {
+  const { vacancyId } = useParams() || props;
   const [ activeStageType, setActiveStageType ] = useState();
   const [ activeStep, setActiveStep ] = useState(0);
   const [ activeValidationSchema, setActiveValidationSchema ] = useState((stageFormValidationSchema[0]))

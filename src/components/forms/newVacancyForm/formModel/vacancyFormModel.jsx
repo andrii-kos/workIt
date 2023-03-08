@@ -5,24 +5,35 @@ const vacancyFormModel =  {
       name: 'vacancyName',
       label: 'Vacancy Name',
       requiredErrorMsg: 'Vacancy Name is Required',
-      minErrorMsg: 'Must be at least 2 characters'
+      minErrorMsg: 'Must be at least 4 characters'
     },
-    stageType: {
-      name: 'stageType',
-      label: 'Stage Type',
-      requiredErrorMsg: 'Stage Type Is Required'
+    vacancyURL: {
+      name: 'vacancyURL',
+      label: 'Vacancy URL',
+      requiredErrorMsg: 'Vacancy URL is Required',
+      urlErrorMsg: 'Vacancy URL Must be url'
+    },
+    workingModel: {
+      name: 'workingModel',
+      label: 'Working Model',
+      requiredErrorMsg: 'Working Model Is Required',
     },
     company: {
       name: 'companyName',
       label: 'Company Name',
       requiredErrorMsg: 'Company Name Is Required',
-      minErrorMsg: 'Must be at least 2 characters'
+      minErrorMsg: 'Must be at least 4 characters'
+    },
+    businessModel: {
+      name: 'businessModel',
+      label: 'Business Model',
+      requiredErrorMsg: 'Business Model Is Required',
     },
     location: {
       name: 'location',
       label: 'Location',
       requiredErrorMsg: 'Location Name Is Required',
-      minErrorMsg: 'Must be at least 2 characters',
+      minErrorMsg: 'Must be at least 4 characters',
     },
     salaryExpectation: {
       name: 'salaryExpectation',
@@ -30,35 +41,23 @@ const vacancyFormModel =  {
       requiredErrorMsg: 'Salary Expectetion Is Required',
       numberErrorMsg: 'Salary must be a number',
     },
-    recruiterName: {
-      name: 'recruiterName',
-      label: 'Recruiter Name',
-      requiredErrorMsg: 'Recruiter Name Is Required',
-      minErrorMsg: 'Must be at least 2 characters',
-    },
-    recruiterLinkedIn: {
-      name: 'recruiterLinkedIn',
-      label: 'Recruiter LinkedIn',
-      requiredErrorMsg: ''
+    hiringManager: {
+      name: 'hiringManager',
+      label: 'Hiring Manager',
+      requiredErrorMsg: 'Hiring Manager Is Required',
+      minErrorMsg: 'Hiring Managerr Must be at least 4 characters',
     },
     vacancyDescription: {
       name: 'vacancyDescription',
       label: 'Vacancy Description',
       requiredErrorMsg: 'Vacancy Description Is Required',
-      minErrorMsg: 'Must be at least 2 characters',
+      minErrorMsg: 'Must be at least 4 characters',
     },
-    coverLeterRecruiterMessage: {
-      name: 'coverLeterRecruiterMessage',
-      label: 'Cover Leter Message',
-      requiredErrorMsg: 'Cover Leter Message Is Required',
-      minErrorMsg: 'Must be at least 2 characters',
-    },
-    stageName: {
-      name: 'stageName',
-      label: 'Stage Name',
-      requiredErrorMsg: 'Stage Name Is Required',
-      minErrorMsg: 'Must be at least 2 characters',
-    },
+    vacancyPriority: {
+      name: 'vacancyPriority',
+      label: 'Vacancy Priority',
+      requiredErrorMsg: 'Vacancy Priority Is Required',
+    }
   }
 }
 

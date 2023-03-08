@@ -48,9 +48,21 @@
           "interviewerNames": [
             "234213452345"
           ]
+        },
+        {
+          "id": "80726501-67a5-415d-b28f-bf2fbce66542",
+          "date": "2023-03-06T20:30:37.876Z",
+          "stageName": "dfhgdfhg",
+          "stageType": "Application",
+          "jobDescription": "asdfasgdsfg",
+          "employmentType": "full-time",
+          "jobStartDate": "2023-03-06T20:30:07.859Z",
+          "proposedCompensation": "3452345",
+          "jobBenefits": "sdfgsdg",
+          "jobApplicationCoverLeter": "gsdfgrwegfsd"
         }
       ],
-      "currentStageId": "3fc230b3-ba19-41dc-bb19-0dea55bb62cb",
+      "currentStageId": "e9dfc372-aac0-4dc8-9278-f35b2410372f",
       "date": "2023-02-17T10:13:59.510Z"
     },
     {
@@ -75,6 +87,45 @@
       ],
       "currentStageId": "2b7ebc6f-b4ed-409a-8d7a-fbc763332442",
       "date": "2023-03-03T20:08:01.139Z"
+    },
+    {
+      "vacancyName": "asdf",
+      "stageType": "Rejection",
+      "companyName": "fasdf",
+      "location": "sdfasdf",
+      "salaryExpectation": "345345",
+      "recruiterName": "fdfdgsdfg",
+      "recruiterLinkedIn": "dfgsdfg",
+      "vacancyDescription": "sdfg",
+      "coverLeterRecruiterMessage": "gsdrtwer",
+      "stageName": "sdfgsdfg",
+      "id": "ec96b6e3-944d-4aaf-b0f4-924eb814ea6c",
+      "stages": [
+        {
+          "stageName": "sdfgsdfg",
+          "id": "f2eb1997-4941-41af-b83a-ab5c48011562",
+          "date": "2023-03-06T18:53:01.810Z",
+          "stageType": "Rejection"
+        }
+      ],
+      "currentStageId": "f2eb1997-4941-41af-b83a-ab5c48011562",
+      "date": "2023-03-06T18:53:01.810Z"
+    },
+    {
+      "vacancyName": "Senior Java Developor",
+      "vacancyURL": "https://www.google.com/search?q=vacancy+form&tbm=isch&ved=2ahUKEwjXl6m7x8r9AhWCmf0HHa3pC6wQ2-cCegQIABAA&oq=vacancy+form&gs_lcp=CgNpbWcQAzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIICAAQBRAeEBM6BAgjECc6BggAEAgQHjoGCAAQBxAeULYIWP8LYIYOaABwAHgAgAHLAYgB4AWSAQUwLjQuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=NJEHZNetKoKz9u8PrdOv4Ao&bih=721&biw=1536#imgrc=RkpCw8Hi3DwYVM",
+      "workingModel": "Remote",
+      "companyName": "Tip Top Trade",
+      "location": "Mohadisho",
+      "businessModel": "Outstaffing",
+      "salaryExpectation": "9990",
+      "hiringManager": "Anna Peterson",
+      "vacancyDescription": "sdfgsdgsdgsdfgsdfgs",
+      "vacancyPriority": 30,
+      "id": "6d782849-2541-4589-b209-c4dadcca7103",
+      "stages": [],
+      "currentStageId": "6d782849-2541-4589-b209-c4dadcca7103",
+      "date": "2023-03-08T20:07:41.584Z"
     }
   ]
 }
