@@ -23,14 +23,12 @@ const DatePickerField = (props) => {
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <Stack spacing={3}>
         <DesktopDatePicker
-          value={field.value}
-          label={label}
-          onError={meta.touched && meta.error && true}
+          inputFormat="DD-MM-YYYY"
+          {...field} 
+          {...props}
           onChange={(e) => handleChange(e)}
           renderInput={(params) => 
             <TextField 
-              {...field} 
-              {...props} 
               {...params} 
               error={meta.touched && meta.error && true} 
               helperText={_renderHelperText()} 

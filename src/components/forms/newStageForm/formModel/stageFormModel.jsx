@@ -91,6 +91,23 @@ const vacancyFormModel =  {
       label: 'Company Name',
       requiredErrorMsg: 'Company Name Is Required',
       minErrorMsg: 'Company Name Must be at least 4 characters',
+    },
+    rejectionPersonName: {
+      name: 'rejectionPersonName',
+      label: 'Rejection Person Name',
+      requiredErrorMsg: 'Rejection Person Name Is Required',
+      minErrorMsg: 'Rejection Person Must be at least 4 characters',
+    },
+    rejectionReason: {
+      name: 'rejectionReason',
+      label: 'Rejection Reason',
+      requiredErrorMsg: 'Rejection Reason Is Required',
+      minErrorMsg: 'Rejection Reason Must be at least 4 characters',
+    },
+    rejectionNotes: {
+      name: 'rejectionNotes',
+      label: 'Rejection Notes',
+      minErrorMsg: 'Rejection Notes Must be at least 4 characters',
     }
   }
 }
