@@ -10,14 +10,11 @@ const {
     interviewDate,
     questionsAndAnswers,
     notes,
-    jobPosition,
-    jobDescription,
     employmentType,
     jobStartDate,
     proposedCompensation,
     jobBenefits,
     jobApplicationCoverLeter,
-    companyName,
   }
 } = vacancyFormModel;
 
@@ -27,7 +24,8 @@ const vacancyFormValidationSchema = [
       .min(4, stageName.minErrorMsg)
       .required(stageName.requiredErrorMsg),
     [stageType.name]: Yup.string()
-      .required(stageType.requiredErrorMsg)}),
+      .required(stageType.requiredErrorMsg)
+  }),
   Yup.object().shape({
     [interviewDate.name]: Yup.date()
       .required(interviewDate.requiredErrorMsg),
@@ -63,12 +61,6 @@ const vacancyFormValidationSchema = [
     [notes.name]: Yup.string()
   }),
   Yup.object().shape({
-    [jobPosition.name]: Yup.string()
-      .min(4, jobPosition.minErrorMsg)
-      .required(jobPosition.requiredErrorMsg),
-    [jobDescription.name]: Yup.string()
-      .min(4, jobDescription.minErrorMsg)
-      .required(jobDescription.requiredErrorMsg),
     [employmentType.name]: Yup.string()
       .min(4, employmentType.minErrorMsg)
       .required(employmentType.requiredErrorMsg),
@@ -79,17 +71,8 @@ const vacancyFormValidationSchema = [
     [jobBenefits.name]: Yup.string()
       .min(4, jobBenefits.minErrorMsg)
       .required(jobBenefits.requiredErrorMsg),
-    [companyName.name]: Yup.string()
-      .min(4, companyName.minErrorMsg)
-      .required(companyName.requiredErrorMsg),
   }),
   Yup.object().shape({
-    [jobPosition.name]: Yup.string()
-      .min(4, jobPosition.minErrorMsg)
-      .required(jobPosition.requiredErrorMsg),
-    [jobDescription.name]: Yup.string()
-      .min(4, jobDescription.minErrorMsg)
-      .required(jobDescription.requiredErrorMsg),
     [employmentType.name]: Yup.string()
       .min(4, employmentType.minErrorMsg)
       .required(employmentType.requiredErrorMsg),

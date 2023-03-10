@@ -48,7 +48,7 @@ const NewVacancyForm = () => {
       ...values, 
       id: id,
       stages: [], 
-      currentStageId: id,
+      //currentStageId: id,
       date
     })).then(() => navigate('/'))
     actions.resetForm()

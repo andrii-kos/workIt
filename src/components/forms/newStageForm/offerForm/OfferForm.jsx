@@ -7,8 +7,6 @@ import { Box, Grid, Typography } from "@mui/material";
 const OfferForm = () => {
   const {
     formField: {
-      jobPosition,
-      jobDescription,
       employmentType,
       jobStartDate,
       proposedCompensation,
@@ -32,12 +30,6 @@ const OfferForm = () => {
       </Grid>
       <Grid item xs={12} sm={6} xl={6}>
         <InputField name={companyName.name} label={companyName.label} />
-      </Grid>
-      <Grid item xs={12} sm={6} xl={6}>
-        <InputField name={jobPosition.name} label={jobPosition.label}/>
-      </Grid>
-      <Grid item xs={12} sm={6} xl={6}>
-        <InputField multiline name={jobDescription.name} label={jobDescription.label}/>
       </Grid>
       <Grid item xs={12} sm={6} xl={6}>
         <DatePickerField name={jobStartDate.name} label={jobStartDate.label}/>

@@ -7,6 +7,9 @@ const StyledSlider = styled(Slider)(
     color: ${maincolor} !important;
     font-size: 50%;
     transition: all .5s ;
+    & 	.MuiSlider-markLabelActive {
+      font-weight: bold;
+    }
   `)
 );
 
@@ -58,16 +61,16 @@ const DisabledSliderField = (props) => {
 }
 
 const SliderField = (props) => {
-  const { marks, label } = props;
+  const { label } = props;
   const [ field, meta ] = useField(props);
 
   return (
     <Box>
       <Typography>{label}</Typography>
       <StyledSlider
-        aria-label="Custom marks"
+        aria-label="Slider"
         defaultValue={50}
-        getAriaValueText={value => `${value} f`}
+        getAriaValueText={value => `${value}`}
         step={10}
         maincolor={sliderColor(field.value)}
         valueLabelDisplay="auto"

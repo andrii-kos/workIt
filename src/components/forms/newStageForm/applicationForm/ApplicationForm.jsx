@@ -14,14 +14,12 @@ const ApplicationForm = () => {
 
   const {
     formField: {
-      jobPosition,
       jobDescription,
       employmentType,
       jobApplicationCoverLeter,
       jobStartDate,
       proposedCompensation,
       jobBenefits,
-      companyName,
     }
   } = stageFormModel;
   return (
@@ -29,12 +27,6 @@ const ApplicationForm = () => {
      <Grid container spacing={3}>
       <Grid item xs={12} sm={12} xl={12}>
         <Typography variant="h5">Job Application</Typography>
-      </Grid>
-      <Grid item xs={12} sm={6} xl={6}>
-        <InputField name={companyName.name} label={companyName.label} />
-      </Grid>
-      <Grid item xs={12} sm={6} xl={6}>
-        <InputField name={jobPosition.name} label={jobPosition.label}/>
       </Grid>
       <Grid item xs={12} sm={6} xl={6}>
         <InputField multiline name={jobDescription.name} label={jobDescription.label}/>

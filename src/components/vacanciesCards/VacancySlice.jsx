@@ -5,13 +5,13 @@ const initialState = {
   vacancies: [],
   loadingStatus: 'iddle',
   postingStatus: 'iddle',
-  updatingStatus: 'iddle'
+  updatingStatus: 'iddle',
 }
 
 export const fetchVacancies = createAsyncThunk(
   'vacancy/fetchVacancies',
   () => {
-    const {request} = useHttp();
+    const { request } = useHttp();
     return request('http://localhost:3000/vacancies')
   }
 )
@@ -19,19 +19,19 @@ export const fetchVacancies = createAsyncThunk(
 export const postNewVacanty = createAsyncThunk(
   'vacancy/postNewVacancy',
   (vacancy) => {
-    const {request} = useHttp();
+    const { request } = useHttp();
     return request('http://localhost:3000/vacancies', 'POST', JSON.stringify(vacancy))
   }
 )
 
 export const postNewStage = createAsyncThunk(
   'vacancy/postNewStage',
-  (data) => {
-    const { id, stages, newStage } = data;
+  async (data) => {
+    const { id, newStage } = data;
+    const { id: stageId } = newStage;
     const { request } = useHttp();
-    return request(`http://localhost:3000/vacancies/${id}`).then(({stages}) => {
-      request(`http://localhost:3000/vacancies/${id}`, 'PATCH', JSON.stringify({stages: [...stages, newStage]}))
-    })
+    const { stages } = await request(`http://localhost:3000/vacancies/${id}`);
+    return request(`http://localhost:3000/vacancies/${id}`, 'PATCH', JSON.stringify({ currentStageId: stageId, stages: [...stages, newStage] }));
   }
 )
 
@@ -52,44 +52,45 @@ const VacancySlice = createSlice({
   extraReducers(builder) {
     builder
       .addCase(fetchVacancies.pending, state => {
-        state.loadingStatus = 'loading'
+        state.loadingStatus = 'loading';
       })
       .addCase(fetchVacancies.fulfilled, (state, action) => {
         state.vacancies = action.payload
-        state.loadingStatus = 'iddle'
+        state.loadingStatus = 'iddle';
       })
       .addCase(fetchVacancies.rejected, (state) => {
-        state.loadingStatus = 'error'
+        state.loadingStatus = 'error';
       })
       .addCase(postNewVacanty.pending, state => {
-        state.postingStatus = 'posting'
+        state.postingStatus = 'posting';
       })
       .addCase(postNewVacanty.fulfilled, (state, action) => {
-        state.postingStatus = 'iddle'
-        state.vacancies.push(action.payload)
+        state.postingStatus = 'iddle';
+        state.vacancies.push(action.payload);
       })
       .addCase(postNewVacanty.rejected, state => {
-        state.postingStatus = 'error'
+        state.postingStatus = 'error';
       })
       .addCase(updateCurrentStageId.pending, state => {
-        state.updatingStatus = 'updating'
+        state.updatingStatus = 'updating';
       })
       .addCase(updateCurrentStageId.fulfilled, (state, action) => {
-        const vacancyInd = state.vacancies.findIndex(elem => elem.id === action.payload.id)
-        state.vacancies[vacancyInd] = action.payload
+        const vacancyInd = state.vacancies.findIndex(elem => elem.id === action.payload.id);
+        state.vacancies[vacancyInd] = action.payload;
       })
       .addCase(updateCurrentStageId.rejected, state => {
-        state.loadingStatus = 'error'
+        state.loadingStatus = 'error';
       })
       .addCase(postNewStage.pending, (state) => {
-        state.updatingStatus = 'updating'
+        state.updatingStatus = 'updating';
       })
       .addCase(postNewStage.fulfilled, (state, action) => {
-        const vacancyInd = state.vacancies.findIndex(elem => elem.id === action.payload.id)
-        state.vacancies[vacancyInd].stages.push(action.payload.stages)
+        const vacancyInd = state.vacancies.findIndex(elem => elem.id === action.payload.id);
+        state.vacancies[vacancyInd].stages.push(action.payload.stages);
+        state.vacancies[vacancyInd].currentStageId = action.payload.currentStageId;
       })
       .addCase(postNewStage.rejected, state => {
-        state.loadingStatus = 'error'
+        state.loadingStatus = 'error';
       })
   }
 })

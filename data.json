@@ -106,9 +106,87 @@
           "id": "f2eb1997-4941-41af-b83a-ab5c48011562",
           "date": "2023-03-06T18:53:01.810Z",
           "stageType": "Rejection"
+        },
+        {
+          "id": "49de1ce2-ecb4-4d66-a645-209c62c3fbda",
+          "date": "2023-03-10T17:48:02.654Z",
+          "stageName": "Interview 2",
+          "stageType": "Interview",
+          "location": "Sases",
+          "questionsAndAnswers": [
+            {
+              "question": "sdfg",
+              "answer": "sdfgsdrg"
+            }
+          ],
+          "notes": "sdfgrwegfdg",
+          "interviewType": "Technical",
+          "interviewerNames": [
+            "fsadg",
+            "sdfg"
+          ]
+        },
+        {
+          "id": "4bc648c6-de85-4b21-b025-beaf29ff66b3",
+          "date": "2023-03-10T17:50:12.222Z",
+          "stageName": "Interview 3",
+          "stageType": "Interview",
+          "location": "ssss",
+          "questionsAndAnswers": [
+            {
+              "question": "fsdaf",
+              "answer": "adsfasdfasdf"
+            },
+            {
+              "question": "dfasdf",
+              "answer": "asdfasdf"
+            }
+          ],
+          "notes": "asdf",
+          "interviewType": "Technical",
+          "interviewerNames": [
+            "sdafsadf"
+          ]
+        },
+        {
+          "id": "d9241647-de6f-43c3-bf32-cddbe1dd0f43",
+          "date": "2023-03-10T17:52:21.171Z",
+          "stageName": "Interview 4",
+          "stageType": "Interview",
+          "location": "fasdfs",
+          "questionsAndAnswers": [
+            {
+              "question": "sgdfg",
+              "answer": "sdfgsdfg"
+            }
+          ],
+          "notes": "sdfgwergdf",
+          "interviewType": "CEO",
+          "interviewerNames": [
+            "gsdfgsd"
+          ]
+        },
+        {
+          "id": "96d225e6-5065-46ef-8e31-a0ec83a5fd77",
+          "date": "2023-03-10T17:54:31.233Z",
+          "stageName": "Interview 5",
+          "stageType": "Interview",
+          "location": "sdgsdfg",
+          "questionsAndAnswers": [
+            {
+              "question": "sdfgsdf",
+              "answer": "sdfgsdfg"
+            }
+          ],
+          "notes": "gsdfg",
+          "interviewType": "Technical",
+          "interviewerNames": [
+            "sdfgsdrg",
+            "sdfgsdfg"
+          ]
         }
       ],
-      "currentStageId": "f2eb1997-4941-41af-b83a-ab5c48011562",
+      "currentStageId": "96d225e6-5065-46ef-8e31-a0ec83a5fd77",
       "date": "2023-03-06T18:53:01.810Z"
     },
     {
@@ -123,9 +201,140 @@
       "vacancyDescription": "sdfgsdgsdgsdfgsdfgs",
       "vacancyPriority": 30,
       "id": "6d782849-2541-4589-b209-c4dadcca7103",
+      "stages": [
+        {
+          "id": "30b17818-a609-4a92-ae73-e379f4ec0fa1",
+          "date": "2023-03-09T19:04:19.989Z",
+          "stageName": "ewrtw ert",
+          "stageType": "Application",
+          "jobDescription": "wretwert",
+          "employmentType": "casuals",
+          "jobStartDate": "2023-03-09T19:04:11.397Z",
+          "proposedCompensation": "343",
+          "jobBenefits": "trewtwert",
+          "jobApplicationCoverLeter": "dgdg"
+        },
+        {
+          "id": "49553445-bca3-443a-8cad-11451d1d476f",
+          "date": "2023-03-09T19:15:59.639Z",
+          "stageName": "sdfgsdfg",
+          "stageType": "Application",
+          "jobDescription": "sdfgsdfg",
+          "employmentType": "full-time",
+          "jobStartDate": "2023-03-09T19:15:50.320Z",
+          "proposedCompensation": "34324",
+          "jobBenefits": "sdfgsdfg",
+          "jobApplicationCoverLeter": "sdgsdfg"
+        }
+      ],
+      "date": "2023-03-08T20:07:41.584Z",
+      "currentStageId": "30b17818-a609-4a92-ae73-e379f4ec0fa1"
+    },
+    {
+      "vacancyName": "Project Manager",
+      "vacancyURL": "blah",
+      "workingModel": "Remote",
+      "companyName": "Caracum",
+      "location": "Damask",
+      "businessModel": "Outstaffing",
+      "salaryExpectation": "13343",
+      "hiringManager": "Maria Trys",
+      "vacancyDescription": "dsafl;ajksdf;laksjdfdfgeg",
+      "vacancyPriority": 90,
+      "id": "ba8e6e16-4701-46d3-8f89-7db75b866cb3",
+      "stages": [
+        {
+          "id": "11789f53-cce5-4a49-b0a2-8bd07a453afb",
+          "date": "2023-03-10T10:06:12.877Z",
+          "stageName": "scfgdhg",
+          "stageType": "Offer",
+          "employmentType": "full-time",
+          "jobStartDate": "2023-03-10T10:06:07.920Z",
+          "proposedCompensation": "34",
+          "jobBenefits": "dfhdf",
+          "companyName": "dfhdfh"
+        },
+        {},
+        {
+          "id": "b553d0c0-16c5-4451-8a79-508bafedcc37",
+          "date": "2023-03-10T15:23:27.407Z",
+          "stageName": "asdf",
+          "stageType": "Offer",
+          "employmentType": "full-time",
+          "jobStartDate": "2023-03-10T15:22:56.793Z",
+          "proposedCompensation": "2345",
+          "jobBenefits": "sdfsdf",
+          "companyName": "asdf"
+        },
+        {
+          "id": "ebb9455a-be53-4576-a6c4-5e14930f1d06",
+          "date": "2023-03-10T15:24:37.356Z",
+          "stageName": "sadfsdf",
+          "stageType": "Interview",
+          "location": "fsdg",
+          "questionsAndAnswers": [
+            {
+              "question": "fasdf",
+              "answer": "asdfwegfsda"
+            }
+          ],
+          "notes": "fasdfwqef",
+          "interviewType": "Technical",
+          "interviewerNames": [
+            "sdafqwef",
+            "asdf",
+            ""
+          ]
+        },
+        {
+          "id": "3bf27654-21e5-4942-8d5a-02ba49f49bf0",
+          "date": "2023-03-10T15:31:41.160Z",
+          "stageName": "Interview 1",
+          "stageType": "Interview",
+          "location": "Paris",
+          "questionsAndAnswers": [
+            {
+              "question": "fasdf",
+              "answer": "asdfa"
+            }
+          ],
+          "notes": "asdf",
+          "interviewType": "Technical",
+          "interviewerNames": [
+            "dsfasdf",
+            "asdfasdf"
+          ]
+        },
+        {
+          "id": "089dac3e-0878-45d7-844a-fc38efc84a2f",
+          "date": "2023-03-10T17:46:06.530Z",
+          "stageName": "dfhg",
+          "stageType": "Application",
+          "jobDescription": "dfhgfgh",
+          "employmentType": "full-time",
+          "jobStartDate": "2023-03-10T17:45:58.282Z",
+          "proposedCompensation": "345",
+          "jobBenefits": "dfhg",
+          "jobApplicationCoverLeter": "dhfhg"
+        }
+      ],
+      "date": "2023-03-09T19:57:01.942Z",
+      "currentStageId": "089dac3e-0878-45d7-844a-fc38efc84a2f"
+    },
+    {
+      "vacancyName": "Middle Python Developer",
+      "vacancyURL": "alsdjfa;lsdfj",
+      "workingModel": "On-site",
+      "companyName": "Ricko Ticko Tik",
+      "location": "Seul",
+      "businessModel": "Outsourcing",
+      "salaryExpectation": "99999",
+      "hiringManager": "Said Malik",
+      "vacancyDescription": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "vacancyPriority": 100,
+      "id": "a7bbd6f3-2d52-4b0c-b788-c614af8ff7c4",
       "stages": [],
-      "currentStageId": "6d782849-2541-4589-b209-c4dadcca7103",
-      "date": "2023-03-08T20:07:41.584Z"
+      "date": "2023-03-10T18:39:45.044Z"
     }
   ]
 }

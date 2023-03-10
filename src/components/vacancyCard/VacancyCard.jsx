@@ -1,5 +1,5 @@
 import { Typography, CardContent, Card, Box, Grid, Chip, Button, Slider } from '@mui/material';
-
+import { useNavigate } from "react-router-dom";
 import ApplicationCard from './applicationCard/ApplicationCard';
 import { DisabledSliderField } from '../forms/formFields/SliderField';
 import InterviewCard from './interviewCard/InterviewCard';
@@ -51,6 +51,8 @@ const VacancyCard = (props) => {
     date
   } = props;
 
+  const navigate = useNavigate();
+
   const renderCardContent = (stageType) => {
     switch(stageType) {
       case 'Application':
@@ -83,42 +85,48 @@ const VacancyCard = (props) => {
             </Grid>
           </Grid> 
           <Grid container>
-            <Grid item xs={12} sm={12} xl={12}>
+            <Grid mt={2} item xs={12} sm={12} xl={12}>
               <Typography component={'span'} mr={1}>Hiring Manager</Typography>
               <StyledChip component={'div'} label={hiringManager}pt={1}/>
             </Grid>
-            <Grid display="flex" alignItems="center" item xs={12} sm={12} xl={12}>
-                <Typography mr={1}>Salary Expectation</Typography>
-                <Typography component={'span'} variant="salaryExpectation">{salaryExpectation}$</Typography>
+            <Grid container>
+              <Grid sx={{padding: 2}} item xs={12} sm={4} xl={4}>
+                <Typography>Salary Expectation</Typography>
+                <Typography variant="salaryExpectation">{salaryExpectation}$</Typography>
               </Grid>
-            <Grid container spacing={3}>
-              <Grid display="flex" alignItems="center" item xs={12} sm={6} xl={6}>
-                <Typography mr={1}>Business Model</Typography>
-                <Typography component={'span'} variant="salaryExpectation">{businessModel}</Typography>
+              <Grid sx={{padding: 2}} item xs={12} sm={4} xl={4}>
+                <Typography textAlign={'center'}>Business Model</Typography>
+                <Typography textAlign={'center'}variant="salaryExpectation">{businessModel}</Typography>
               </Grid>
-              <Grid display="flex" alignItems="center" item xs={12} sm={6} xl={6}>
-                <Typography mr={1}>Working Model</Typography>
-                <Typography component={'span'} variant="salaryExpectation">{workingModel}</Typography>
+              <Grid sx={{padding: 2}} item xs={12} sm={4} xl={4}>
+                <Typography textAlign={'right'}>Working Model</Typography>
+                <Typography textAlign={'right'}variant="salaryExpectation">
+                  {workingModel}
+                </Typography>
               </Grid>
             </Grid>
-            
-            <Grid mt={1} item xs={12} sm={12} xl={12}>
+            <Grid my={2} item xs={12} sm={12} xl={12}>
               <Typography>Description</Typography>
               <Typography fontFamily={'Lora'}>{vacancyDescription}</Typography>
             </Grid>
           </Grid>
-          {
-            currentStage 
+          {currentStage 
             ? 
-            <Grid container display="flex" alignItems="center">
-            <Grid item xs={12} sm={12} xl={'auto'}>
-              <Typography mr={1}>Current Stage Name</Typography>
-            </Grid>
-            <Grid item xs={12} sm={12} xl={'auto'}>
-              <StageControl id={id}/>
-            </Grid>
-          </Grid>
-          : <Button>Add New Stage</Button>
+              <Grid container display="flex" alignItems="center">
+                <Grid item xs={12} sm={12} xl={'auto'}>
+                  <Typography mr={1}>Current Stage Name</Typography>
+                </Grid>
+                <Grid item xs={12} sm={12} xl={'auto'}>
+                  <StageControl id={id}/>
+                </Grid>
+              </Grid>
+            : <Button 
+                fullWidth 
+                variant="outlined"
+                onClick={() => navigate(`newStage/${id}`)}
+              >
+                Add New Stage
+              </Button>
           }
           {/* {renderCardContent(currentStage.stageType)} */}
         </CardContent>

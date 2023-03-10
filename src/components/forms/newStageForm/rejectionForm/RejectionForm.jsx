@@ -1,10 +1,16 @@
-
+import { Box, Typography, Grid } from "@mui/material"
+import InputField from "..//../formFields/InputField";
 
 const RejectionForm = () => {
   return (
-    <div>
-      Rejection Form
-    </div>
+    <Box>
+      <Typography>Rejection Form</Typography>
+      <Grid container>
+        <Grid item >
+          <InputField />
+        </Grid>
+      </Grid>
+    </Box>
   )
 }
 

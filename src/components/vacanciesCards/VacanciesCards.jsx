@@ -15,7 +15,7 @@ const VacanciesCards = () => {
 
   const renderCard = (props, id) => {
     const { currentStageId, stages } = props;
-    const [ currentStage ] = stages.filter(elem => elem.id === currentStageId)
+    const [ currentStage ] = stages.filter(elem => elem.id === currentStageId);
     return <VacancyCard  key={id} {...props} currentStage={currentStage} />   
   }
 

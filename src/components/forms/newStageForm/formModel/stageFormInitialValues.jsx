@@ -10,15 +10,11 @@ const {
     interviewerNames,
     questionsAndAnswers,
     notes,
-    jobPosition,
-    jobDescription,
     employmentType,
     jobStartDate,
     proposedCompensation,
     jobBenefits,
     jobApplicationCoverLeter,
-    companyName,
-
   }
 } = vacancyFormModel;
 
@@ -31,14 +27,11 @@ const vacancyFormInitialValues = {
   [interviewDate.name]: '',
   [questionsAndAnswers.name]: [{question: '', answer: ''}],
   [notes.name]: '',
-  [jobPosition.name]: '',
-  [jobDescription.name]: '',
   [employmentType.name]: '',
   [jobStartDate.name]: '',
   [proposedCompensation.name]: '',
   [jobBenefits.name]: '',
   [jobApplicationCoverLeter.name]: '',
-  [companyName.name]: '',
 }
 
 export default vacancyFormInitialValues
