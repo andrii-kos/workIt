@@ -86,6 +86,10 @@ const vacancyFormModel =  {
       requiredErrorMsg: 'Cover Leter Is Required',
       minErrorMsg: 'Cover Leter Must be at least 4 characters',
     },
+    jobApplicationNotes: {
+      name: 'jobApplicationNotes',
+      label: 'Notes',
+    },
     companyName: {
       name: 'companyName',
       label: 'Company Name',

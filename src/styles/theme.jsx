@@ -7,7 +7,7 @@ const theme = createTheme({
   palette: {
     primary: {
       light: '#EEF2E6',
-      main: '#3D8361',
+      main: '#23B5D3',
       dark: '#D6CDA4',
       contrastText: '#EEEEEE',
     },
@@ -21,20 +21,34 @@ const theme = createTheme({
   typography: {
     fontFamily: Montserrat,
     vacancyName: {
+      display: 'flex',
       fontWeight: 'bold',
       //fontStyle: 'italic',
       //fontWeight: 'bold',
       fontSize: '150%',
       textTransform: 'uppercase',
     },
+
+    location: {
+      fontStyle: 'italic'
+    },
     salaryExpectation: {
-      display: 'block',
-      textDecoration: 'underline #3D8361',
-      fontWeight: 'bold',
+
+      color: '#23B5D3',
     },
     stageType: {
-      color: '#3D8361',
+      color: '#23B5D3',
       fontWeight: 'bold',
+    },
+    description: {
+      display: 'flex',
+      fontFamily: 'Lora',
+      textAlign: 'justify',
+      lineHeight: '1.4'
+    },
+    highlightedText: {
+      fontWeight: 'bold',
+      marginRight: '1em',
     }
   }
   

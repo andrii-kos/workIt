@@ -27,22 +27,22 @@ const NewStageForm = () => {
     if (activeStep === 0) {
       setActiveValidationSchema(stageFormValidationSchema[0])
     } else {
-      switch (activeStageType) {
-        case 'Interview':
-          setActiveValidationSchema(stageFormValidationSchema[1])
-          break
-        case 'Offer': 
-          setActiveValidationSchema(stageFormValidationSchema[2])
-          break
-        case 'Application': 
-          setActiveValidationSchema(stageFormValidationSchema[3])
-          break
-        case 'Rejection': 
-          setActiveValidationSchema(stageFormValidationSchema[4])
-          break
-        default:
-          return null
-      }
+    switch (activeStageType) {
+      case 'Interview':
+        setActiveValidationSchema(stageFormValidationSchema[1])
+        break
+      case 'Offer': 
+        setActiveValidationSchema(stageFormValidationSchema[2])
+        break
+      case 'Application': 
+        setActiveValidationSchema(stageFormValidationSchema[3])
+        break
+      case 'Rejection': 
+        setActiveValidationSchema(stageFormValidationSchema[4])
+        break
+      default:
+        return null
+    }
     }
   };
 
@@ -82,73 +82,43 @@ const NewStageForm = () => {
   const submitForm = (actions, values) => {
     const date = new Date();
     const id = v4();
-    const getNewStageObject = (activeStageType, values) => {
-      switch (activeStageType) {
-        case 'Interview':
-          return {
-            id, 
-            date, 
-            stageName: values.stageName,
-            stageType: values.stageType,
-            location: values.location,
-            questionsAndAnswers: values.questionsAndAnswers,
-            notes: values.notes,
-            interviewType: values.interviewType,
-            interviewerNames: values.interviewerNames
+    const getFilledValues = (values) => {
+      return Object.fromEntries(
+        
+        Object.entries(values).filter(([key, value]) => { 
+          if (value[0] === '') {
+            return false
+          } else if (key === 'questionsAndAnswers' && (value[0].question === '' || value[0].answer === '')) {
+            return false
+          } else if (value === '') {
+            return false
+          } else {
+            return true
           }
-        case 'Offer': 
-          return {
-            id, 
-            date, 
-            stageName: values.stageName,
-            stageType: values.stageType,
-            jobPostion: values.jobPostion,
-            jobDescription: values.jobDescription,
-            employmentType: values.employmentType,
-            jobStartDate: values.jobStartDate,
-            proposedCompensation: values.proposedCompensation,
-            jobBenefits: values.jobBenefits,
-            companyName: values.companyName,
-          }
-          case 'Application': 
-            return {
-              id, 
-              date, 
-              stageName: values.stageName,
-              stageType: values.stageType,
-              jobPostion: values.jobPostion,
-              jobDescription: values.jobDescription,
-              employmentType: values.employmentType,
-              jobStartDate: values.jobStartDate,
-              proposedCompensation: values.proposedCompensation,
-              jobBenefits: values.jobBenefits,
-              jobApplicationCoverLeter: values.jobApplicationCoverLeter,
-            }
-          default:
-            return null
-      }
+        })
+      )
     };
 
-    dispatch(postNewStage({id: vacancyId, newStage: {...getNewStageObject(activeStageType, values)}}))
+    dispatch(postNewStage({id: vacancyId, newStage: {id, date, ...getFilledValues(values)}}))
     actions.resetForm()
   }
 
   const handleBack = () => {
     if (activeStep > 0) {
-      setActiveStep((prevState) => prevState - 1)
+      setActiveStep((prevState) => prevState - 1);
     }
   };
 
   const handleSubmit = (values, actions) => {
     switch(activeStep) {
       case 0:
-        actions.setTouched({})
-        setActiveStageType(values.stageType)
-        setActiveStep(activeStep + 1)
+        actions.setTouched({});
+        setActiveStageType(values.stageType);
+        setActiveStep(activeStep + 1);
         break
       case 2:
-        submitForm(actions, values)
-        navigate('/')
+        submitForm(actions, values);
+        navigate('/');
         break
       default:
         setActiveStep(activeStep + 1)

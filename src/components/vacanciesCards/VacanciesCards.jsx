@@ -1,39 +1,65 @@
-import Box from '@mui/material/Box';
-import Masonry from '@mui/lab/Masonry';
-import VacancyCard from "../vacancyCard/VacancyCard";
+import { Box, Grid } from '@mui/material';
+import VacancyCardItem from "../vacancyCard/vacancyCardItem/VacancyCardItem";
+import CardDetailed from '../vacancyCard/cardDetailed/CardDetailed';
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { fetchVacancies } from './VacancySlice';
 
 const VacanciesCards = () => {
   const dispatch = useDispatch();
   const vacancies = useSelector(state => state.vacancies.vacancies);
+  const [ selectedCardId, setSelectedCardId ] = useState(null);
 
   useEffect(() => {
     dispatch(fetchVacancies());
   }, []);
 
-  const renderCard = (props, id) => {
-    const { currentStageId, stages } = props;
-    const [ currentStage ] = stages.filter(elem => elem.id === currentStageId);
-    return <VacancyCard  key={id} {...props} currentStage={currentStage} />   
+  const getVacancyById = (vacancyList, id) => {
+    return vacancyList.find(vacancy => vacancy.id === id)
+  };
+
+  const getCurrentStageById = (stages, id) => {
+    return stages.find(elem => elem.id === id)
   }
 
-  const vacanciesList = (vacancies) => {
+  const renderCard = (props, id) => {
+    const { currentStageId, stages } = props;
+    return (
+      <VacancyCardItem
+        setSelectedCardId={setSelectedCardId}
+        selectedCardId={selectedCardId}
+        key={id} 
+        {...props} 
+        currentStage={getCurrentStageById(stages, currentStageId)} 
+      />  
+    )
+  };
+
+  const rendeCardsList = (vacancies) => {
     if (vacancies.length === 0 ) {
       return <p>There is no vacancies</p>
     }
     return vacancies.map(({...props}, id) => renderCard({...props}, id)
     )
-  }
+  };
   
-  const elements = vacanciesList(vacancies);
+  const elements = rendeCardsList(vacancies);
+
   return (
-    <Box p={5}>
-      <Masonry sx={{ margin: 0}} columns={{lg:3, md:2, sm:1}} spacing={3}>
-        {elements}
-      </Masonry>
-        
+    <Box py={10} px={20}>
+      <Grid container spacing={3}>
+        <Grid item xs={12} sm={6} xl={6}>
+          {elements}
+        </Grid>
+        {selectedCardId && 
+          <Grid item xs={12} sm={6} xl={6}>
+            <CardDetailed 
+              vacancy={getVacancyById(vacancies, selectedCardId)} 
+              setSelectedCardId={setSelectedCardId}
+              getCurrentStageById={getCurrentStageById} 
+            />
+          </Grid>}
+      </Grid> 
     </Box>
     
   )

@@ -11,7 +11,7 @@ const OfferForm = () => {
       jobStartDate,
       proposedCompensation,
       jobBenefits,
-      companyName,
+      notes,
     }
   } = stageFormModel;
 
@@ -29,10 +29,10 @@ const OfferForm = () => {
         <Typography variant="h5">Job Offer</Typography>
       </Grid>
       <Grid item xs={12} sm={6} xl={6}>
-        <InputField name={companyName.name} label={companyName.label} />
-      </Grid>
-      <Grid item xs={12} sm={6} xl={6}>
         <DatePickerField name={jobStartDate.name} label={jobStartDate.label}/>
+      </Grid>
+      <Grid item xs={12} sm={12} xl={6}>
+        <InputField name={proposedCompensation.name} label={proposedCompensation.label}/>
       </Grid>
       <Grid item xs={12} sm={12} xl={12}>
         <ToggleField 
@@ -42,10 +42,10 @@ const OfferForm = () => {
         />
       </Grid>
       <Grid item xs={12} sm={12} xl={6}>
-        <InputField name={proposedCompensation.name} label={proposedCompensation.label}/>
+        <InputField name={jobBenefits.name} label={jobBenefits.label}/>
       </Grid>
       <Grid item xs={12} sm={12} xl={6}>
-        <InputField name={jobBenefits.name} label={jobBenefits.label}/>
+        <InputField name={notes.name} label={notes.label}/>
       </Grid>
      </Grid>
     </Box>

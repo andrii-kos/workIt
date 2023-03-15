@@ -67,7 +67,7 @@ const NewVacancyForm = () => {
   ];
 
   return (
-  <Box px={{xs:5, sm:5, xl: 20}}>
+  <Box mx={{xs:5, sm:5, xl: 30}}>
     <Formik
       initialValues={vacancyFormInitialValues}
       validationSchema={vacancyFormValidationSchema}

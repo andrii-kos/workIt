@@ -15,6 +15,10 @@ const {
     proposedCompensation,
     jobBenefits,
     jobApplicationCoverLeter,
+    jobApplicationNotes,
+    rejectionPersonName,
+    rejectionReason,
+    rejectionNotes,
   }
 } = vacancyFormModel;
 
@@ -32,6 +36,10 @@ const vacancyFormInitialValues = {
   [proposedCompensation.name]: '',
   [jobBenefits.name]: '',
   [jobApplicationCoverLeter.name]: '',
+  [jobApplicationNotes.name]: '',
+  [rejectionPersonName.name]: '',
+  [rejectionReason.name]: '',
+  [rejectionNotes.name]: '',
 }
 
 export default vacancyFormInitialValues

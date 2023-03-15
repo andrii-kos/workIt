@@ -38,10 +38,9 @@ export const postNewStage = createAsyncThunk(
 export const updateCurrentStageId = createAsyncThunk(
   'vacancy/updateCurrentStageId',
   (data) => {
-    const { id, vacancy, currentStageId } = data;
+    const { id, currentStageId } = data;
     const { request } = useHttp();
-    const updatedData = { ...vacancy, currentStageId }
-    return request(`http://localhost:3000/vacancies/${id}`, 'PUT', JSON.stringify(updatedData))
+    return request(`http://localhost:3000/vacancies/${id}`, 'PATCH', JSON.stringify({currentStageId: currentStageId}))
   }
 )
 

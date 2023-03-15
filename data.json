@@ -1,69 +1,65 @@
 {
   "vacancies": [
     {
-      "vacancyName": "Front End Developer",
-      "stageType": "Application",
-      "companyName": "Softserwe",
-      "location": "Kiev",
-      "salaryExpectation": "322",
-      "recruiterName": "Ana Bach",
-      "recruiterLinkedIn": "dfgsdfg",
-      "vacancyDescription": "sdfgsdfgs",
-      "coverLeterRecruiterMessage": "sdfgerg",
-      "stageName": "Application",
-      "id": "e358e483-4a5c-48fd-8b8c-e6138956d7a7",
+      "vacancyName": "Middle Python Developer",
+      "vacancyURL": "alsdjfa;lsdfj",
+      "workingModel": "On-site",
+      "companyName": "Ricko Ticko Tik",
+      "location": "Seul",
+      "businessModel": "Outsourcing",
+      "salaryExpectation": "99999",
+      "hiringManager": "Said Malik",
+      "vacancyDescription": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "vacancyPriority": 100,
+      "id": "a7bbd6f3-2d52-4b0c-b788-c614af8ff7c4",
       "stages": [
         {
-          "id": "e9dfc372-aac0-4dc8-9278-f35b2410372f",
-          "date": "2023-03-01T12:55:09.966Z",
-          "location": "",
-          "questionsAndAnswers": [
-            {
-              "question": "",
-              "answer": ""
-            }
-          ],
-          "notes": "",
+          "id": "8108f1c3-713e-40c6-a435-394df9fd3234",
+          "date": "2023-03-14T20:58:37.982Z",
+          "stageName": "Apllication on TH",
           "stageType": "Application",
-          "interviewType": "",
-          "stageName": "HR Interivew",
-          "interviewerNames": [
-            ""
-          ]
+          "employmentType": "part-time",
+          "jobStartDate": "",
+          "proposedCompensation": "999",
+          "jobBenefits": "s",
+          "jobApplicationCoverLeter": "sdfgssdfgsdfgsdg"
         },
         {
-          "id": "3fc230b3-ba19-41dc-bb19-0dea55bb62cb",
-          "date": "2023-03-01T16:28:05.620Z",
-          "stageName": "sdgsdfg",
-          "stageType": "Interview",
-          "location": "dfgdsfgre",
-          "questionsAndAnswers": [
-            {
-              "question": "sdfgtrg",
-              "answer": "sdfgertg"
-            }
-          ],
-          "notes": "sdfgertg",
-          "interviewType": "HR",
-          "interviewerNames": [
-            "234213452345"
-          ]
-        },
-        {
-          "id": "80726501-67a5-415d-b28f-bf2fbce66542",
-          "date": "2023-03-06T20:30:37.876Z",
-          "stageName": "dfhgdfhg",
+          "id": "e102997f-6b8a-44cc-ac9d-647a523a79b2",
+          "date": "2023-03-14T21:00:08.704Z",
+          "stageName": "11111",
           "stageType": "Application",
-          "jobDescription": "asdfasgdsfg",
           "employmentType": "full-time",
-          "jobStartDate": "2023-03-06T20:30:07.859Z",
-          "proposedCompensation": "3452345",
-          "jobBenefits": "sdfgsdg",
-          "jobApplicationCoverLeter": "gsdfgrwegfsd"
+          "jobStartDate": "",
+          "proposedCompensation": "234",
+          "jobBenefits": "benefits",
+          "jobApplicationCoverLeter": "cover leter"
+        },
+        {
+          "id": "69d024a3-730e-4449-a8ec-b028a198658b",
+          "date": "2023-03-14T21:01:42.333Z",
+          "stageName": "22222",
+          "stageType": "Application",
+          "employmentType": "other",
+          "jobStartDate": "",
+          "proposedCompensation": "234",
+          "jobBenefits": "2342",
+          "jobApplicationCoverLeter": "asdfqedf"
+        },
+        {
+          "id": "a2d65b01-e2de-4413-9683-e1aa2f145580",
+          "date": "2023-03-14T21:03:33.967Z",
+          "stageName": "33333",
+          "stageType": "Application",
+          "employmentType": "full-time",
+          "proposedCompensation": "342124",
+          "jobBenefits": "5fsgsdfg",
+          "jobApplicationCoverLeter": "sdfg",
+          "jobApplicationNotes": "sdfgsdfgsdfg"
         }
       ],
-      "currentStageId": "e9dfc372-aac0-4dc8-9278-f35b2410372f",
-      "date": "2023-02-17T10:13:59.510Z"
+      "date": "2023-03-10T18:39:45.044Z",
+      "currentStageId": "e102997f-6b8a-44cc-ac9d-647a523a79b2"
     },
     {
       "vacancyName": "Ssfgdfg",
@@ -83,9 +79,32 @@
           "id": "2b7ebc6f-b4ed-409a-8d7a-fbc763332442",
           "date": "2023-03-03T20:08:01.139Z",
           "stageType": "Offer"
+        },
+        {
+          "id": "4fd09b9c-ef8a-4364-ae07-56433e3211c1",
+          "date": "2023-03-13T21:21:51.441Z",
+          "stageName": "My Offer",
+          "stageType": "Offer",
+          "employmentType": "full-time",
+          "jobStartDate": "2023-03-02T22:00:00.000Z",
+          "proposedCompensation": "2435",
+          "jobBenefits": "sdfgsdfg",
+          "companyName": "sdfgdfg"
+        },
+        {
+          "id": "f14df6ad-fa67-4adb-90db-0372faf61555",
+          "date": "2023-03-13T21:23:52.134Z",
+          "stageName": "asdfdf",
+          "stageType": "Application",
+          "jobDescription": "sadfasdf",
+          "employmentType": "full-time",
+          "jobStartDate": "2023-03-02T22:00:00.000Z",
+          "proposedCompensation": "23452354",
+          "jobBenefits": "fdgsfg",
+          "jobApplicationCoverLeter": "sdfgsdfg"
         }
       ],
-      "currentStageId": "2b7ebc6f-b4ed-409a-8d7a-fbc763332442",
+      "currentStageId": "4fd09b9c-ef8a-4364-ae07-56433e3211c1",
       "date": "2023-03-03T20:08:01.139Z"
     },
     {
@@ -184,9 +203,21 @@
             "sdfgsdrg",
             "sdfgsdfg"
           ]
+        },
+        {
+          "id": "4fb07ed4-3b47-42e1-b724-0837e78b63d3",
+          "date": "2023-03-13T21:24:23.883Z",
+          "stageName": "sdfgeg",
+          "stageType": "Application",
+          "jobDescription": "wertwetr",
+          "employmentType": "other",
+          "jobStartDate": "2023-03-02T22:00:00.000Z",
+          "proposedCompensation": "4235",
+          "jobBenefits": "twertwert",
+          "jobApplicationCoverLeter": "dgfgfsg"
         }
       ],
-      "currentStageId": "96d225e6-5065-46ef-8e31-a0ec83a5fd77",
+      "currentStageId": "4bc648c6-de85-4b21-b025-beaf29ff66b3",
       "date": "2023-03-06T18:53:01.810Z"
     },
     {
@@ -254,7 +285,6 @@
           "jobBenefits": "dfhdf",
           "companyName": "dfhdfh"
         },
-        {},
         {
           "id": "b553d0c0-16c5-4451-8a79-508bafedcc37",
           "date": "2023-03-10T15:23:27.407Z",
@@ -306,35 +336,106 @@
           ]
         },
         {
-          "id": "089dac3e-0878-45d7-844a-fc38efc84a2f",
-          "date": "2023-03-10T17:46:06.530Z",
-          "stageName": "dfhg",
+          "id": "b7152704-2837-40cf-a037-053ac9eeb98c",
+          "date": "2023-03-15T21:13:20.529Z",
+          "stageName": "Rejection",
+          "stageType": "Rejection",
+          "rejectionPersonName": "adsfa",
+          "rejectionReason": "fasdf",
+          "rejectionNotes": "asdfasdf"
+        },
+        {
+          "id": "f7f13e9d-a002-4790-b521-0dd9a57552e3",
+          "date": "2023-03-15T21:13:45.779Z",
+          "stageName": "Application",
           "stageType": "Application",
-          "jobDescription": "dfhgfgh",
           "employmentType": "full-time",
-          "jobStartDate": "2023-03-10T17:45:58.282Z",
-          "proposedCompensation": "345",
-          "jobBenefits": "dfhg",
-          "jobApplicationCoverLeter": "dhfhg"
+          "proposedCompensation": "3452345",
+          "jobBenefits": "sdfgsdfg",
+          "jobApplicationCoverLeter": "sdfgsdfg",
+          "jobApplicationNotes": "sdfgsdg"
+        },
+        {
+          "id": "57d21d7a-b2ff-49c2-ba41-5ca26ad72b02",
+          "date": "2023-03-15T21:14:16.992Z",
+          "stageName": "dfghdfhg",
+          "stageType": "Interview",
+          "interviewType": "Technical",
+          "location": "wertwert",
+          "interviewerNames": [
+            "wertgfdhg",
+            ""
+          ],
+          "interviewDate": "2023-03-01T22:00:00.000Z",
+          "notes": "sdfgsdfg"
+        },
+        {
+          "id": "b6ee372f-c07b-438e-a934-ed76ff6f51e6",
+          "date": "2023-03-15T21:15:04.337Z",
+          "stageName": "asdfasdf",
+          "stageType": "Interview",
+          "interviewType": "Technical",
+          "location": "adsfasd",
+          "interviewerNames": [
+            "asdfasdfasdf"
+          ],
+          "interviewDate": "2023-03-10T22:00:00.000Z",
+          "notes": "asdfasdf"
+        },
+        {
+          "id": "a7cafd34-d7ab-47a9-88de-495ab805e0ab",
+          "date": "2023-03-15T21:16:35.185Z",
+          "stageName": "asdfasdf",
+          "stageType": "Interview",
+          "interviewType": "Technical",
+          "location": "asdfa",
+          "interviewerNames": [
+            "asdfasdf"
+          ],
+          "interviewDate": "2023-03-08T22:00:00.000Z",
+          "questionsAndAnswers": [
+            {
+              "question": "asdf",
+              "answer": "asdfasdf"
+            }
+          ],
+          "notes": "asdf"
+        },
+        {
+          "id": "50a4c0c8-8ffd-4b85-8a40-a0df02b32b6f",
+          "date": "2023-03-15T21:16:52.977Z",
+          "stageName": "sdgdg",
+          "stageType": "Rejection",
+          "rejectionPersonName": "sdfg",
+          "rejectionReason": "sdfgsdf",
+          "rejectionNotes": "gsfdgsfdg"
+        },
+        {
+          "id": "6e967506-9e91-41a2-805a-2d5e08fb3975",
+          "date": "2023-03-15T21:17:18.159Z",
+          "stageName": "sdfgsdfg",
+          "stageType": "Offer",
+          "notes": "sdfgsdfg",
+          "employmentType": "full-time",
+          "jobStartDate": "2023-03-07T22:00:00.000Z",
+          "proposedCompensation": "3452345",
+          "jobBenefits": "sdfg",
+          "companyName": "dfgsdfg"
+        },
+        {
+          "id": "f370c7c0-d054-41a8-8fb3-9751594bd815",
+          "date": "2023-03-15T21:20:08.581Z",
+          "stageName": "asdfsdf",
+          "stageType": "Offer",
+          "notes": "adsfasdf",
+          "employmentType": "full-time",
+          "jobStartDate": "2023-03-17T22:00:00.000Z",
+          "proposedCompensation": "2341234",
+          "jobBenefits": "adsf"
         }
       ],
       "date": "2023-03-09T19:57:01.942Z",
-      "currentStageId": "089dac3e-0878-45d7-844a-fc38efc84a2f"
-    },
-    {
-      "vacancyName": "Middle Python Developer",
-      "vacancyURL": "alsdjfa;lsdfj",
-      "workingModel": "On-site",
-      "companyName": "Ricko Ticko Tik",
-      "location": "Seul",
-      "businessModel": "Outsourcing",
-      "salaryExpectation": "99999",
-      "hiringManager": "Said Malik",
-      "vacancyDescription": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "vacancyPriority": 100,
-      "id": "a7bbd6f3-2d52-4b0c-b788-c614af8ff7c4",
-      "stages": [],
-      "date": "2023-03-10T18:39:45.044Z"
+      "currentStageId": "f370c7c0-d054-41a8-8fb3-9751594bd815"
     }
   ]
 }

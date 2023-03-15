@@ -1,5 +1,4 @@
 import InputField from "../../formFields/InputField";
-import DatePickerField from "../../formFields/DatePickerField";
 import ToggleField from "../../formFields/ToggleField";
 import { Box, Grid, Typography } from "@mui/material";
 import stageFormModel from "../formModel/stageFormModel";
@@ -14,10 +13,9 @@ const ApplicationForm = () => {
 
   const {
     formField: {
-      jobDescription,
       employmentType,
       jobApplicationCoverLeter,
-      jobStartDate,
+      jobApplicationNotes,
       proposedCompensation,
       jobBenefits,
     }
@@ -27,12 +25,6 @@ const ApplicationForm = () => {
      <Grid container spacing={3}>
       <Grid item xs={12} sm={12} xl={12}>
         <Typography variant="h5">Job Application</Typography>
-      </Grid>
-      <Grid item xs={12} sm={6} xl={6}>
-        <InputField multiline name={jobDescription.name} label={jobDescription.label}/>
-      </Grid>
-      <Grid item xs={12} sm={6} xl={6}>
-        <DatePickerField name={jobStartDate.name} label={jobStartDate.label}/>
       </Grid>
       <Grid item xs={12} sm={12} xl={12}>
         <ToggleField 
@@ -49,6 +41,9 @@ const ApplicationForm = () => {
       </Grid>
       <Grid item xs={12} sm={12} xl={12}>
         <InputField multiline name={jobApplicationCoverLeter.name} label={jobApplicationCoverLeter.label}/>
+      </Grid>
+      <Grid item xs={12} sm={12} xl={12}>
+        <InputField multiline name={jobApplicationNotes.name} label={jobApplicationNotes.label}/>
       </Grid>
      </Grid>
     </Box>

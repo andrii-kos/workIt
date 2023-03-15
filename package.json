@@ -1,5 +1,5 @@
 {
-  "name": "job-search-app",
+  "name": "workIt",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -52,6 +52,7 @@
   "devDependencies": {
     "@mui/lab": "^5.0.0-alpha.119",
     "json-server": "^0.17.2",
-    "react-router": "^6.8.1"
+    "react-router": "^6.8.1",
+    "yup": "^1.0.2"
   }
 }

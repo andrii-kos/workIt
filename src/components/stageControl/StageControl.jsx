@@ -1,13 +1,13 @@
 import { useState, useRef } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { updateCurrentStageId } from '../vacanciesCards/VacancySlice';
 import { useNavigate } from "react-router-dom";
 import { 
-  CardActions, 
   Button, 
   ButtonGroup,
   ClickAwayListener,
   Grow,
+  Box,
   Paper,
   Popper,
   MenuItem,
@@ -18,44 +18,37 @@ import {
 import { ArrowDropDown, LibraryAddSharp, PersonSearch, Hail, PersonAddAlt1, PersonRemoveAlt1 } from '@mui/icons-material/';
 
 
-const StageControl = ({id}) => {
-
+const StageControl = (props) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const [ open, setOpen ] = useState(false);
   const anchorRef = useRef(null);
 
-  const vacancy = useSelector(state => state.vacancies.vacancies.filter(elem => elem.id === id)[0]);
-  const { stages, currentStageId } = vacancy;
+  const { vacancy: {stages, currentStageId, id} } = props;
   const currentStageIndex = stages.map(elem => elem.id).indexOf(currentStageId);
-  const [ selectedId, setSelectedId ] = useState(currentStageIndex);
-  
-
   const handleClick = (event) => {
     console.info(`You clicked ${stages}`);
   };
 
   const handleMenuItemClick = (event, index) => {
-    dispatch(updateCurrentStageId({id, vacancy, currentStageId: stages[index].id}))
-    setSelectedId(index);
+    dispatch(updateCurrentStageId({id, currentStageId: stages[index].id}));
     setOpen(false);
   };
 
   const handleToggle = (event) => {
-    setOpen(prevOpen => !prevOpen)
+    setOpen(prevOpen => !prevOpen);
   };
 
   const handleClose = (event) => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
-    }
-
+    };
     setOpen(false);
   };
 
   const handleNavigate = () => {
-    navigate(`newStage/${id}`)
+    navigate(`newStage/${id}`);
   };
 
   const renderMenuItemIcon = (stageType) => {
@@ -74,7 +67,7 @@ const StageControl = ({id}) => {
   }
 
   return (
-    <CardActions sx={{p: 0, my: 1}}>
+    <Box sx={{p: 0, my: 1}}>
       <ButtonGroup ref={anchorRef} aria-label="split button">
         <Button 
           sx={{fontWeight: 'bold'}} 
@@ -82,7 +75,7 @@ const StageControl = ({id}) => {
           variant="outlined" 
           onClick={handleClick}
         >
-          {stages[selectedId].stageName}
+          {stages[currentStageIndex].stageName}
         </Button>
         <Button
           size="small"
@@ -129,7 +122,7 @@ const StageControl = ({id}) => {
                   {stages.map(({stageName, stageType}, index) => (
                     <MenuItem
                       key={index}
-                      selected={index === selectedId}
+                      selected={index === currentStageIndex}
                       onClick={(event) => handleMenuItemClick(event, index)}
                     >
                       {renderMenuItemIcon(stageType)}
@@ -142,7 +135,7 @@ const StageControl = ({id}) => {
           </Grow>
         )}
       </Popper>
-    </CardActions>
+    </Box>
   )
 }
 
