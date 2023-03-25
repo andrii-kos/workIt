@@ -10,6 +10,7 @@ const OfferCard = (props) => {
     stageType,
     notes
   } = props;
+  
   return (
     <Grid mt={2} pt={1} borderTop="1px solid red" container item >
       <Grid mt={1} item xs={12} sm={12} xl={12}>

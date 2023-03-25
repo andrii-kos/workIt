@@ -1,62 +1,68 @@
 import { Box, Grid } from '@mui/material';
 import VacancyCardItem from "../vacancyCard/vacancyCardItem/VacancyCardItem";
-import CardDetailed from '../vacancyCard/cardDetailed/CardDetailed';
+import DetailedCard from '../vacancyCard/detailedCard/DetailedCard';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { fetchVacancies } from './VacancySlice';
+import { fetchStages } from '../stageControl/StageSlice';
+import { createSelector } from '@reduxjs/toolkit';
+
+const vacanciesWithStages = createSelector(
+  state => state.vacancies.vacancies,
+  state => state.stages.stages,
+  (vacancies, stages) => ({stages, vacancies})
+)
 
 const VacanciesCards = () => {
   const dispatch = useDispatch();
-  const vacancies = useSelector(state => state.vacancies.vacancies);
+  const { stages, vacancies } = useSelector(vacanciesWithStages);
   const [ selectedCardId, setSelectedCardId ] = useState(null);
-
   useEffect(() => {
+    dispatch(fetchStages());
     dispatch(fetchVacancies());
-  }, []);
-
-  const getVacancyById = (vacancyList, id) => {
-    return vacancyList.find(vacancy => vacancy.id === id)
+  
+  }, [dispatch]);
+  
+  const getArrayItemById = (array, id) => {
+    return array.find(item => item.id === id)
   };
 
-  const getCurrentStageById = (stages, id) => {
-    return stages.find(elem => elem.id === id)
-  }
 
-  const renderCard = (props, id) => {
-    const { currentStageId, stages } = props;
+  const renderCard = (vacancy, id, stages) => {
+    const { currentStageId } = vacancy;
     return (
       <VacancyCardItem
         setSelectedCardId={setSelectedCardId}
         selectedCardId={selectedCardId}
         key={id} 
-        {...props} 
-        currentStage={getCurrentStageById(stages, currentStageId)} 
+        stages={stages.filter(elem => elem.vacancyId === selectedCardId)}
+        vacancy={vacancy} 
+        currentStage={getArrayItemById(stages, currentStageId)} 
       />  
     )
   };
 
-  const rendeCardsList = (vacancies) => {
+  const rendeCardsList = (vacancies, stages) => {
     if (vacancies.length === 0 ) {
       return <p>There is no vacancies</p>
     }
-    return vacancies.map(({...props}, id) => renderCard({...props}, id)
+    return vacancies.map((vacancy, id) => renderCard(vacancy, id, stages)
     )
   };
-  
-  const elements = rendeCardsList(vacancies);
 
   return (
     <Box py={10} px={20}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6} xl={6}>
-          {elements}
+          {rendeCardsList(vacancies, stages)}
         </Grid>
-        {selectedCardId && 
+        {getArrayItemById(vacancies, selectedCardId) && 
           <Grid item xs={12} sm={6} xl={6}>
-            <CardDetailed 
-              vacancy={getVacancyById(vacancies, selectedCardId)} 
+            <DetailedCard 
+              vacancy={getArrayItemById(vacancies, selectedCardId)} 
+              stages={stages.filter(elem => elem.vacancyId === selectedCardId)}
               setSelectedCardId={setSelectedCardId}
-              getCurrentStageById={getCurrentStageById} 
+              getArrayItemById={getArrayItemById} 
             />
           </Grid>}
       </Grid> 

@@ -12,37 +12,51 @@ export const fetchVacancies = createAsyncThunk(
   'vacancy/fetchVacancies',
   () => {
     const { request } = useHttp();
-    return request('http://localhost:3000/vacancies')
+    return request('http://localhost:3000/vacancies');
   }
-)
+);
 
-export const postNewVacanty = createAsyncThunk(
+export const postNewVacancy = createAsyncThunk(
   'vacancy/postNewVacancy',
   (vacancy) => {
     const { request } = useHttp();
     return request('http://localhost:3000/vacancies', 'POST', JSON.stringify(vacancy))
   }
-)
+);
 
-export const postNewStage = createAsyncThunk(
-  'vacancy/postNewStage',
-  async (data) => {
-    const { id, newStage } = data;
-    const { id: stageId } = newStage;
+export const updateVacancy = createAsyncThunk(
+  'vacancy/updateVacancy',
+  ({id, updatedVacancy}) => {
+    console.log(updatedVacancy)
     const { request } = useHttp();
-    const { stages } = await request(`http://localhost:3000/vacancies/${id}`);
-    return request(`http://localhost:3000/vacancies/${id}`, 'PATCH', JSON.stringify({ currentStageId: stageId, stages: [...stages, newStage] }));
+    return request(
+      `http://localhost:3000/vacancies/${id}`,
+      'PUT',
+      JSON.stringify({...updatedVacancy})
+    )
   }
 )
 
+export const deleteVacancy = createAsyncThunk(
+  'vacancy/deleteVacancy',
+  (id) => {
+    const { request } = useHttp();
+    return  request(`http://localhost:3000/vacancies/${id}`, 'DELETE')
+  }
+);
+
 export const updateCurrentStageId = createAsyncThunk(
-  'vacancy/updateCurrentStageId',
+  'stages/updateCurrentStageId',
   (data) => {
     const { id, currentStageId } = data;
     const { request } = useHttp();
-    return request(`http://localhost:3000/vacancies/${id}`, 'PATCH', JSON.stringify({currentStageId: currentStageId}))
+    return request(
+      `http://localhost:3000/vacancies/${id}`, 
+      'PATCH', 
+      JSON.stringify({currentStageId: currentStageId})
+    )
   }
-)
+);
 
 const VacancySlice = createSlice({
   name: 'vacancy',
@@ -54,47 +68,73 @@ const VacancySlice = createSlice({
         state.loadingStatus = 'loading';
       })
       .addCase(fetchVacancies.fulfilled, (state, action) => {
-        state.vacancies = action.payload
         state.loadingStatus = 'iddle';
+        state.vacancies = action.payload;
       })
       .addCase(fetchVacancies.rejected, (state) => {
         state.loadingStatus = 'error';
       })
-      .addCase(postNewVacanty.pending, state => {
+
+      .addCase(postNewVacancy.pending, state => {
         state.postingStatus = 'posting';
       })
-      .addCase(postNewVacanty.fulfilled, (state, action) => {
+      .addCase(postNewVacancy.fulfilled, (state, action) => {
         state.postingStatus = 'iddle';
         state.vacancies.push(action.payload);
       })
-      .addCase(postNewVacanty.rejected, state => {
+      .addCase(postNewVacancy.rejected, state => {
         state.postingStatus = 'error';
       })
+
+      .addCase(updateVacancy.pending, state => {
+        state.updatingStatus = 'updating';
+      })
+      .addCase(updateVacancy.fulfilled, (state, action) => {
+        state.vacancies = state.vacancies.map(elem => {
+          if (elem.id === action.payload.id) {
+            return action.payload
+          } else {
+            return elem
+          }
+        })
+        state.loadingStatus = 'iddle';
+      })
+      .addCase(updateVacancy.rejected, state => {
+        state.loadingStatus = 'error';
+      })
+
+      .addCase(deleteVacancy.pending, state => {
+        state.loadingStatus = 'loading';
+      })
+      .addCase(deleteVacancy.fulfilled, (state, action) => {
+        state.loadingStatus = 'iddle';
+        state.vacancies = state.vacancies.filter(elem => elem.id !== action.meta.arg);
+      })
+      .addCase(deleteVacancy, state => {
+        state.postingStatus = 'error';
+      })
+
       .addCase(updateCurrentStageId.pending, state => {
         state.updatingStatus = 'updating';
       })
-      .addCase(updateCurrentStageId.fulfilled, (state, action) => {
-        const vacancyInd = state.vacancies.findIndex(elem => elem.id === action.payload.id);
-        state.vacancies[vacancyInd] = action.payload;
+      .addCase(updateCurrentStageId.fulfilled, (state, {payload}) => {
+        state.loadingStatus = 'iddle';
+        state.vacancies.map(elem => {
+          if (elem.id === payload.id) {
+            elem.currentStageId = payload.currentStageId;
+            return elem
+          } else {
+            return elem
+          }
+        })
       })
       .addCase(updateCurrentStageId.rejected, state => {
         state.loadingStatus = 'error';
       })
-      .addCase(postNewStage.pending, (state) => {
-        state.updatingStatus = 'updating';
-      })
-      .addCase(postNewStage.fulfilled, (state, action) => {
-        const vacancyInd = state.vacancies.findIndex(elem => elem.id === action.payload.id);
-        state.vacancies[vacancyInd].stages.push(action.payload.stages);
-        state.vacancies[vacancyInd].currentStageId = action.payload.currentStageId;
-      })
-      .addCase(postNewStage.rejected, state => {
-        state.loadingStatus = 'error';
-      })
   }
-})
+});
 
-const {actions, reducer} = VacancySlice
+const { actions, reducer } = VacancySlice
 
-export {actions}
+export { actions }
 export default reducer

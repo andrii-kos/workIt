@@ -1,6 +1,5 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { updateCurrentStageId } from '../vacanciesCards/VacancySlice';
 import { useNavigate } from "react-router-dom";
 import { 
   Button, 
@@ -14,22 +13,26 @@ import {
   MenuList,
   Typography
  } from '@mui/material';
+ import { ArrowDropDown, LibraryAddSharp, PersonSearch, Hail, PersonAddAlt1, PersonRemoveAlt1 } from '@mui/icons-material/';
 
-import { ArrowDropDown, LibraryAddSharp, PersonSearch, Hail, PersonAddAlt1, PersonRemoveAlt1 } from '@mui/icons-material/';
+import { updateCurrentStageId } from '../vacanciesCards/VacancySlice';
+
 
 
 const StageControl = (props) => {
+  const { cardContainerRef } = props;
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
   const [ open, setOpen ] = useState(false);
+  const [ cardContainerHeight, setCardContainerHeight ] = useState(0)
   const anchorRef = useRef(null);
 
-  const { vacancy: {stages, currentStageId, id} } = props;
+  useEffect(() => {
+    setCardContainerHeight(cardContainerRef.current.clientHeight)
+  }); 
+
+  const { vacancy: {currentStageId, id}, stages } = props;
   const currentStageIndex = stages.map(elem => elem.id).indexOf(currentStageId);
-  const handleClick = (event) => {
-    console.info(`You clicked ${stages}`);
-  };
 
   const handleMenuItemClick = (event, index) => {
     dispatch(updateCurrentStageId({id, currentStageId: stages[index].id}));
@@ -64,7 +67,7 @@ const StageControl = (props) => {
       default:
         return null
     }
-  }
+  };
 
   return (
     <Box sx={{p: 0, my: 1}}>
@@ -73,7 +76,6 @@ const StageControl = (props) => {
           sx={{fontWeight: 'bold'}} 
           color='primary' 
           variant="outlined" 
-          onClick={handleClick}
         >
           {stages[currentStageIndex].stageName}
         </Button>
@@ -95,7 +97,7 @@ const StageControl = (props) => {
           aria-haspopup="menu"
           onClick={handleNavigate}
         >
-          <LibraryAddSharp color='primary' />
+          <LibraryAddSharp color="primary" />
         </Button>
       </ButtonGroup>
       <Popper
@@ -116,7 +118,8 @@ const StageControl = (props) => {
                 placement === 'bottom' ? 'center top' : 'center bottom',
             }}
           >
-            <Paper>
+          
+            <Paper sx={{maxHeight: `${cardContainerHeight - 200}px`, overflow: 'auto'}}>
               <ClickAwayListener onClickAway={handleClose}>
                 <MenuList id="split-button-menu" autoFocusItem>
                   {stages.map(({stageName, stageType}, index) => (

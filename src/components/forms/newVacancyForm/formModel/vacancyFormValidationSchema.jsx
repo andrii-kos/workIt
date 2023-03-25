@@ -6,13 +6,12 @@ const {
     vacancyName,
     vacancyURL,
     workingModel,
-    company,
+    companyName,
     location,
     businessModel,
     salaryExpectation,
     hiringManager,
     vacancyDescription,
-    vacancyPriority,
   }
 } = vacancyFormModel;
 
@@ -25,9 +24,9 @@ const vacancyFormValidationSchema = Yup.object({
       .required(vacancyURL.requiredErrorMsg),
     [workingModel.name]: Yup.string()
       .required(workingModel.requiredErrorMsg),
-    [company.name]: Yup.string()
-      .min(4, company.minErrorMsg)
-      .required(company.requiredErrorMsg),
+    [companyName.name]: Yup.string()
+      .min(4, companyName.minErrorMsg)
+      .required(companyName.requiredErrorMsg),
     [location.name]: Yup.string()
       .min(4, location.minErrorMsg)
       .required(location.requiredErrorMsg),
@@ -41,9 +40,7 @@ const vacancyFormValidationSchema = Yup.object({
       .required(hiringManager.requiredErrorMsg),
     [vacancyDescription.name]: Yup.string()
       .required(vacancyDescription.requiredErrorMsg)
-      .min(4, vacancyDescription.minErrorMsg),
-    [vacancyPriority.name]: Yup.number()
-      .required(vacancyDescription.requiredErrorMsg)
+      .min(4, vacancyDescription.minErrorMsg)
   })
 
   export default vacancyFormValidationSchema

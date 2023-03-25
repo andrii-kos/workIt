@@ -1,441 +1,158 @@
 {
   "vacancies": [
     {
-      "vacancyName": "Middle Python Developer",
-      "vacancyURL": "alsdjfa;lsdfj",
+      "selectedCardId": "641df429fb6bb8256d512bdf",
+      "stages": [
+        {
+          "id": "e6261119-dbb1-4ff6-8099-e7319530860a",
+          "date": "2023-03-25T08:35:34.696Z",
+          "stageName": "4444",
+          "stageType": "Rejection",
+          "rejectionPersonName": "sfdgsdf",
+          "rejectionReason": "45345",
+          "rejectionNotes": "dfgsdfg",
+          "vacancyId": "641df429fb6bb8256d512bdf"
+        }
+      ],
+      "id": "641df429fb6bb8256d512bdf",
+      "vacancyName": "3452354",
+      "vacancyURL": "https://codebeautify.org/random-link-generator",
       "workingModel": "On-site",
-      "companyName": "Ricko Ticko Tik",
-      "location": "Seul",
+      "companyName": "Plasmos",
+      "location": "Albany",
       "businessModel": "Outsourcing",
-      "salaryExpectation": "99999",
-      "hiringManager": "Said Malik",
-      "vacancyDescription": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "vacancyPriority": 100,
-      "id": "a7bbd6f3-2d52-4b0c-b788-c614af8ff7c4",
-      "stages": [
-        {
-          "id": "8108f1c3-713e-40c6-a435-394df9fd3234",
-          "date": "2023-03-14T20:58:37.982Z",
-          "stageName": "Apllication on TH",
-          "stageType": "Application",
-          "employmentType": "part-time",
-          "jobStartDate": "",
-          "proposedCompensation": "999",
-          "jobBenefits": "s",
-          "jobApplicationCoverLeter": "sdfgssdfgsdfgsdg"
-        },
-        {
-          "id": "e102997f-6b8a-44cc-ac9d-647a523a79b2",
-          "date": "2023-03-14T21:00:08.704Z",
-          "stageName": "11111",
-          "stageType": "Application",
-          "employmentType": "full-time",
-          "jobStartDate": "",
-          "proposedCompensation": "234",
-          "jobBenefits": "benefits",
-          "jobApplicationCoverLeter": "cover leter"
-        },
-        {
-          "id": "69d024a3-730e-4449-a8ec-b028a198658b",
-          "date": "2023-03-14T21:01:42.333Z",
-          "stageName": "22222",
-          "stageType": "Application",
-          "employmentType": "other",
-          "jobStartDate": "",
-          "proposedCompensation": "234",
-          "jobBenefits": "2342",
-          "jobApplicationCoverLeter": "asdfqedf"
-        },
-        {
-          "id": "a2d65b01-e2de-4413-9683-e1aa2f145580",
-          "date": "2023-03-14T21:03:33.967Z",
-          "stageName": "33333",
-          "stageType": "Application",
-          "employmentType": "full-time",
-          "proposedCompensation": "342124",
-          "jobBenefits": "5fsgsdfg",
-          "jobApplicationCoverLeter": "sdfg",
-          "jobApplicationNotes": "sdfgsdfgsdfg"
-        }
-      ],
-      "date": "2023-03-10T18:39:45.044Z",
-      "currentStageId": "e102997f-6b8a-44cc-ac9d-647a523a79b2"
+      "salaryExpectation": 2184.64,
+      "hiringManager": "Susanne Mcneil",
+      "recruiterLinkedIn": "adipisicing",
+      "vacancyDescription": "Lorem minim aute aliquip pariatur adipisicing minim ut laborum sunt cupidatat. Id duis culpa dolor duis consequat. Reprehenderit occaecat labore sunt sit quis velit ipsum eu labore labore.",
+      "currentStageId": "e6261119-dbb1-4ff6-8099-e7319530860a",
+      "date": "2023-03-25T09:32:26.950Z",
+      "currentStage": {
+        "id": "e6261119-dbb1-4ff6-8099-e7319530860a",
+        "date": "2023-03-25T08:35:34.696Z",
+        "stageName": "4444",
+        "stageType": "Rejection",
+        "rejectionPersonName": "sfdgsdf",
+        "rejectionReason": "45345",
+        "rejectionNotes": "dfgsdfg",
+        "vacancyId": "641df429fb6bb8256d512bdf"
+      }
     },
     {
-      "vacancyName": "Ssfgdfg",
-      "stageType": "Offer",
-      "companyName": "sdfgsdgf",
-      "location": "sdfgdf",
-      "salaryExpectation": "4545",
-      "recruiterName": "gsdfg",
-      "recruiterLinkedIn": "gsdfg",
-      "vacancyDescription": "gsdfgsdfg",
-      "coverLeterRecruiterMessage": "gdtegweg",
-      "stageName": "sfgsdfg",
-      "id": "4d573a79-c429-4c0a-913d-cde5eafb2e1b",
-      "stages": [
-        {
-          "stageName": "sfgsdfg",
-          "id": "2b7ebc6f-b4ed-409a-8d7a-fbc763332442",
-          "date": "2023-03-03T20:08:01.139Z",
-          "stageType": "Offer"
-        },
-        {
-          "id": "4fd09b9c-ef8a-4364-ae07-56433e3211c1",
-          "date": "2023-03-13T21:21:51.441Z",
-          "stageName": "My Offer",
-          "stageType": "Offer",
-          "employmentType": "full-time",
-          "jobStartDate": "2023-03-02T22:00:00.000Z",
-          "proposedCompensation": "2435",
-          "jobBenefits": "sdfgsdfg",
-          "companyName": "sdfgdfg"
-        },
-        {
-          "id": "f14df6ad-fa67-4adb-90db-0372faf61555",
-          "date": "2023-03-13T21:23:52.134Z",
-          "stageName": "asdfdf",
-          "stageType": "Application",
-          "jobDescription": "sadfasdf",
-          "employmentType": "full-time",
-          "jobStartDate": "2023-03-02T22:00:00.000Z",
-          "proposedCompensation": "23452354",
-          "jobBenefits": "fdgsfg",
-          "jobApplicationCoverLeter": "sdfgsdfg"
-        }
-      ],
-      "currentStageId": "4fd09b9c-ef8a-4364-ae07-56433e3211c1",
-      "date": "2023-03-03T20:08:01.139Z"
+      "selectedCardId": "641df42911da5ae04a3d803e",
+      "stages": [],
+      "id": "641df42911da5ae04a3d803e",
+      "vacancyName": "2222",
+      "vacancyURL": "https://codebeautify.org/random-link-generator",
+      "workingModel": "On-site",
+      "companyName": "Nutralab",
+      "location": "Dorneyville",
+      "businessModel": "Outsourcing",
+      "salaryExpectation": 3104.73,
+      "hiringManager": "Cooper Case",
+      "recruiterLinkedIn": "id",
+      "vacancyDescription": "Duis reprehenderit nostrud pariatur tempor veniam qui laborum sunt cupidatat exercitation sunt ea cupidatat. Fugiat irure reprehenderit quis est aute enim et in nulla dolor labore commodo ipsum irure. Incididunt aute minim nisi pariatur adipisicing exercitation dolore ullamco mollit proident.",
+      "currentStageId": "be8261c8-7602-45b1-9cca-0afcdfed9d9a",
+      "date": "2023-03-25T09:12:06.539Z"
     },
     {
-      "vacancyName": "asdf",
+      "id": "641df4297a8395d15eb320f1",
+      "vacancyName": "irure",
+      "vacancyURL": "https://codebeautify.org/random-link-generator",
+      "workingModel": "Remote",
+      "companyName": "Electonic",
+      "location": "Jacksonwald",
+      "businessModel": "Product",
+      "salaryExpectation": 6969.88,
+      "hiringManager": "Walls Castro",
+      "recruiterLinkedIn": "consectetur",
+      "vacancyDescription": "Anim non commodo velit voluptate officia non esse. Aliquip occaecat duis nostrud occaecat pariatur dolor adipisicing ex aliqua eiusmod enim occaecat velit amet. Dolor exercitation ea fugiat eu culpa mollit.",
+      "currentStageId": "e81340d7-0be9-4753-b105-a1bb30c44bf4",
+      "date": "1978-09-17T11:26:24.955Z"
+    },
+    {
+      "id": "641df429a9ffda68edbf742f",
+      "vacancyName": "Lorem",
+      "vacancyURL": "https://codebeautify.org/random-link-generator",
+      "workingModel": "On-site",
+      "companyName": "Shepard",
+      "location": "Cumminsville",
+      "businessModel": "Product",
+      "salaryExpectation": 6476.38,
+      "hiringManager": "Boyd Wilson",
+      "recruiterLinkedIn": "dolore",
+      "vacancyDescription": "Officia reprehenderit duis reprehenderit reprehenderit velit consectetur consectetur sit ea. Duis qui adipisicing enim nisi. Proident esse proident nisi do excepteur non nisi pariatur ad culpa exercitation voluptate cupidatat exercitation.",
+      "currentStageId": "50e01c25-cd64-4627-846a-bf839183bbb6",
+      "date": "1989-05-05T11:32:39.428Z"
+    },
+    {
+      "id": "641df429cf34869ba16cf3c3",
+      "vacancyName": "cillum",
+      "vacancyURL": "https://codebeautify.org/random-link-generator",
+      "workingModel": "On-site",
+      "companyName": "Solaren",
+      "location": "Islandia",
+      "businessModel": "Outsourcing",
+      "salaryExpectation": 3024.24,
+      "hiringManager": "Underwood Boyd",
+      "recruiterLinkedIn": "id",
+      "vacancyDescription": "Ut occaecat reprehenderit cupidatat adipisicing nisi anim aliqua. Fugiat ea occaecat reprehenderit culpa amet eiusmod labore quis sint proident. Voluptate mollit anim elit ut nostrud do exercitation.",
+      "currentStageId": "50e01c25-cd64-4627-846a-bf839183bbb6",
+      "date": "2023-03-25T09:32:43.818Z"
+    },
+    {
+      "id": "641df429736c7c05b8fa8613",
+      "vacancyName": "id",
+      "vacancyURL": "https://codebeautify.org/random-link-generator",
+      "workingModel": "Hybrid",
+      "companyName": "Quarex",
+      "location": "Calpine",
+      "businessModel": "Outstaffing",
+      "salaryExpectation": 3822.14,
+      "hiringManager": "Meadows Cunningham",
+      "recruiterLinkedIn": "reprehenderit",
+      "vacancyDescription": "Ipsum enim adipisicing ex excepteur aute velit sit qui magna incididunt irure. Cupidatat tempor culpa aliquip quis duis dolor ex id id et voluptate elit. Quis cillum adipisicing sit cupidatat nisi ex occaecat.",
+      "currentStageId": "50e01c25-cd64-4627-846a-bf839183bbb6",
+      "date": "1999-10-10T22:32:46.141Z"
+    },
+    {
+      "id": "641df42931025ceb48cac28d",
+      "vacancyName": "aute",
+      "vacancyURL": "https://codebeautify.org/random-link-generator",
+      "workingModel": "Remote",
+      "companyName": "Apextri",
+      "location": "Adelino",
+      "businessModel": "Product",
+      "salaryExpectation": 5197.42,
+      "hiringManager": "Park Newton",
+      "recruiterLinkedIn": "ad",
+      "vacancyDescription": "Magna ea magna cillum duis aliqua aliqua non in sint Lorem nulla fugiat aute do. Dolor laborum laborum mollit sint enim elit ex velit quis sint nisi. Excepteur fugiat amet occaecat cupidatat dolor aliquip velit fugiat aute aliquip.",
+      "currentStageId": "50e01c25-cd64-4627-846a-bf839183bbb6",
+      "date": "2010-09-29T11:38:27.417Z"
+    }
+  ],
+  "stages": [
+    {
+      "id": "e6261119-dbb1-4ff6-8099-e7319530860a",
+      "date": "2023-03-25T08:35:34.696Z",
+      "stageName": "4444",
       "stageType": "Rejection",
-      "companyName": "fasdf",
-      "location": "sdfasdf",
-      "salaryExpectation": "345345",
-      "recruiterName": "fdfdgsdfg",
-      "recruiterLinkedIn": "dfgsdfg",
-      "vacancyDescription": "sdfg",
-      "coverLeterRecruiterMessage": "gsdrtwer",
-      "stageName": "sdfgsdfg",
-      "id": "ec96b6e3-944d-4aaf-b0f4-924eb814ea6c",
-      "stages": [
-        {
-          "stageName": "sdfgsdfg",
-          "id": "f2eb1997-4941-41af-b83a-ab5c48011562",
-          "date": "2023-03-06T18:53:01.810Z",
-          "stageType": "Rejection"
-        },
-        {
-          "id": "49de1ce2-ecb4-4d66-a645-209c62c3fbda",
-          "date": "2023-03-10T17:48:02.654Z",
-          "stageName": "Interview 2",
-          "stageType": "Interview",
-          "location": "Sases",
-          "questionsAndAnswers": [
-            {
-              "question": "sdfg",
-              "answer": "sdfgsdrg"
-            }
-          ],
-          "notes": "sdfgrwegfdg",
-          "interviewType": "Technical",
-          "interviewerNames": [
-            "fsadg",
-            "sdfg"
-          ]
-        },
-        {
-          "id": "4bc648c6-de85-4b21-b025-beaf29ff66b3",
-          "date": "2023-03-10T17:50:12.222Z",
-          "stageName": "Interview 3",
-          "stageType": "Interview",
-          "location": "ssss",
-          "questionsAndAnswers": [
-            {
-              "question": "fsdaf",
-              "answer": "adsfasdfasdf"
-            },
-            {
-              "question": "dfasdf",
-              "answer": "asdfasdf"
-            }
-          ],
-          "notes": "asdf",
-          "interviewType": "Technical",
-          "interviewerNames": [
-            "sdafsadf"
-          ]
-        },
-        {
-          "id": "d9241647-de6f-43c3-bf32-cddbe1dd0f43",
-          "date": "2023-03-10T17:52:21.171Z",
-          "stageName": "Interview 4",
-          "stageType": "Interview",
-          "location": "fasdfs",
-          "questionsAndAnswers": [
-            {
-              "question": "sgdfg",
-              "answer": "sdfgsdfg"
-            }
-          ],
-          "notes": "sdfgwergdf",
-          "interviewType": "CEO",
-          "interviewerNames": [
-            "gsdfgsd"
-          ]
-        },
-        {
-          "id": "96d225e6-5065-46ef-8e31-a0ec83a5fd77",
-          "date": "2023-03-10T17:54:31.233Z",
-          "stageName": "Interview 5",
-          "stageType": "Interview",
-          "location": "sdgsdfg",
-          "questionsAndAnswers": [
-            {
-              "question": "sdfgsdf",
-              "answer": "sdfgsdfg"
-            }
-          ],
-          "notes": "gsdfg",
-          "interviewType": "Technical",
-          "interviewerNames": [
-            "sdfgsdrg",
-            "sdfgsdfg"
-          ]
-        },
-        {
-          "id": "4fb07ed4-3b47-42e1-b724-0837e78b63d3",
-          "date": "2023-03-13T21:24:23.883Z",
-          "stageName": "sdfgeg",
-          "stageType": "Application",
-          "jobDescription": "wertwetr",
-          "employmentType": "other",
-          "jobStartDate": "2023-03-02T22:00:00.000Z",
-          "proposedCompensation": "4235",
-          "jobBenefits": "twertwert",
-          "jobApplicationCoverLeter": "dgfgfsg"
-        }
-      ],
-      "currentStageId": "4bc648c6-de85-4b21-b025-beaf29ff66b3",
-      "date": "2023-03-06T18:53:01.810Z"
+      "rejectionPersonName": "sfdgsdf",
+      "rejectionReason": "45345",
+      "rejectionNotes": "dfgsdfg",
+      "vacancyId": "641df429fb6bb8256d512bdf"
     },
     {
-      "vacancyName": "Senior Java Developor",
-      "vacancyURL": "https://www.google.com/search?q=vacancy+form&tbm=isch&ved=2ahUKEwjXl6m7x8r9AhWCmf0HHa3pC6wQ2-cCegQIABAA&oq=vacancy+form&gs_lcp=CgNpbWcQAzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIICAAQBRAeEBM6BAgjECc6BggAEAgQHjoGCAAQBxAeULYIWP8LYIYOaABwAHgAgAHLAYgB4AWSAQUwLjQuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=NJEHZNetKoKz9u8PrdOv4Ao&bih=721&biw=1536#imgrc=RkpCw8Hi3DwYVM",
-      "workingModel": "Remote",
-      "companyName": "Tip Top Trade",
-      "location": "Mohadisho",
-      "businessModel": "Outstaffing",
-      "salaryExpectation": "9990",
-      "hiringManager": "Anna Peterson",
-      "vacancyDescription": "sdfgsdgsdgsdfgsdfgs",
-      "vacancyPriority": 30,
-      "id": "6d782849-2541-4589-b209-c4dadcca7103",
-      "stages": [
-        {
-          "id": "30b17818-a609-4a92-ae73-e379f4ec0fa1",
-          "date": "2023-03-09T19:04:19.989Z",
-          "stageName": "ewrtw ert",
-          "stageType": "Application",
-          "jobDescription": "wretwert",
-          "employmentType": "casuals",
-          "jobStartDate": "2023-03-09T19:04:11.397Z",
-          "proposedCompensation": "343",
-          "jobBenefits": "trewtwert",
-          "jobApplicationCoverLeter": "dgdg"
-        },
-        {
-          "id": "49553445-bca3-443a-8cad-11451d1d476f",
-          "date": "2023-03-09T19:15:59.639Z",
-          "stageName": "sdfgsdfg",
-          "stageType": "Application",
-          "jobDescription": "sdfgsdfg",
-          "employmentType": "full-time",
-          "jobStartDate": "2023-03-09T19:15:50.320Z",
-          "proposedCompensation": "34324",
-          "jobBenefits": "sdfgsdfg",
-          "jobApplicationCoverLeter": "sdgsdfg"
-        }
-      ],
-      "date": "2023-03-08T20:07:41.584Z",
-      "currentStageId": "49553445-bca3-443a-8cad-11451d1d476f"
-    },
-    {
-      "vacancyName": "Project Manager",
-      "vacancyURL": "blah",
-      "workingModel": "Remote",
-      "companyName": "Caracum",
-      "location": "Damask",
-      "businessModel": "Outstaffing",
-      "salaryExpectation": "13343",
-      "hiringManager": "Maria Trys",
-      "vacancyDescription": "dsafl;ajksdf;laksjdfdfgeg",
-      "vacancyPriority": 90,
-      "id": "ba8e6e16-4701-46d3-8f89-7db75b866cb3",
-      "stages": [
-        {
-          "id": "11789f53-cce5-4a49-b0a2-8bd07a453afb",
-          "date": "2023-03-10T10:06:12.877Z",
-          "stageName": "scfgdhg",
-          "stageType": "Offer",
-          "employmentType": "full-time",
-          "jobStartDate": "2023-03-10T10:06:07.920Z",
-          "proposedCompensation": "34",
-          "jobBenefits": "dfhdf",
-          "companyName": "dfhdfh"
-        },
-        {
-          "id": "b553d0c0-16c5-4451-8a79-508bafedcc37",
-          "date": "2023-03-10T15:23:27.407Z",
-          "stageName": "asdf",
-          "stageType": "Offer",
-          "employmentType": "full-time",
-          "jobStartDate": "2023-03-10T15:22:56.793Z",
-          "proposedCompensation": "2345",
-          "jobBenefits": "sdfsdf",
-          "companyName": "asdf"
-        },
-        {
-          "id": "ebb9455a-be53-4576-a6c4-5e14930f1d06",
-          "date": "2023-03-10T15:24:37.356Z",
-          "stageName": "sadfsdf",
-          "stageType": "Interview",
-          "location": "fsdg",
-          "questionsAndAnswers": [
-            {
-              "question": "fasdf",
-              "answer": "asdfwegfsda"
-            }
-          ],
-          "notes": "fasdfwqef",
-          "interviewType": "Technical",
-          "interviewerNames": [
-            "sdafqwef",
-            "asdf",
-            ""
-          ]
-        },
-        {
-          "id": "3bf27654-21e5-4942-8d5a-02ba49f49bf0",
-          "date": "2023-03-10T15:31:41.160Z",
-          "stageName": "Interview 1",
-          "stageType": "Interview",
-          "location": "Paris",
-          "questionsAndAnswers": [
-            {
-              "question": "fasdf",
-              "answer": "asdfa"
-            }
-          ],
-          "notes": "asdf",
-          "interviewType": "Technical",
-          "interviewerNames": [
-            "dsfasdf",
-            "asdfasdf"
-          ]
-        },
-        {
-          "id": "b7152704-2837-40cf-a037-053ac9eeb98c",
-          "date": "2023-03-15T21:13:20.529Z",
-          "stageName": "Rejection",
-          "stageType": "Rejection",
-          "rejectionPersonName": "adsfa",
-          "rejectionReason": "fasdf",
-          "rejectionNotes": "asdfasdf"
-        },
-        {
-          "id": "f7f13e9d-a002-4790-b521-0dd9a57552e3",
-          "date": "2023-03-15T21:13:45.779Z",
-          "stageName": "Application",
-          "stageType": "Application",
-          "employmentType": "full-time",
-          "proposedCompensation": "3452345",
-          "jobBenefits": "sdfgsdfg",
-          "jobApplicationCoverLeter": "sdfgsdfg",
-          "jobApplicationNotes": "sdfgsdg"
-        },
-        {
-          "id": "57d21d7a-b2ff-49c2-ba41-5ca26ad72b02",
-          "date": "2023-03-15T21:14:16.992Z",
-          "stageName": "dfghdfhg",
-          "stageType": "Interview",
-          "interviewType": "Technical",
-          "location": "wertwert",
-          "interviewerNames": [
-            "wertgfdhg",
-            ""
-          ],
-          "interviewDate": "2023-03-01T22:00:00.000Z",
-          "notes": "sdfgsdfg"
-        },
-        {
-          "id": "b6ee372f-c07b-438e-a934-ed76ff6f51e6",
-          "date": "2023-03-15T21:15:04.337Z",
-          "stageName": "asdfasdf",
-          "stageType": "Interview",
-          "interviewType": "Technical",
-          "location": "adsfasd",
-          "interviewerNames": [
-            "asdfasdfasdf"
-          ],
-          "interviewDate": "2023-03-10T22:00:00.000Z",
-          "notes": "asdfasdf"
-        },
-        {
-          "id": "a7cafd34-d7ab-47a9-88de-495ab805e0ab",
-          "date": "2023-03-15T21:16:35.185Z",
-          "stageName": "asdfasdf",
-          "stageType": "Interview",
-          "interviewType": "Technical",
-          "location": "asdfa",
-          "interviewerNames": [
-            "asdfasdf"
-          ],
-          "interviewDate": "2023-03-08T22:00:00.000Z",
-          "questionsAndAnswers": [
-            {
-              "question": "asdf",
-              "answer": "asdfasdf"
-            }
-          ],
-          "notes": "asdf"
-        },
-        {
-          "id": "50a4c0c8-8ffd-4b85-8a40-a0df02b32b6f",
-          "date": "2023-03-15T21:16:52.977Z",
-          "stageName": "sdgdg",
-          "stageType": "Rejection",
-          "rejectionPersonName": "sdfg",
-          "rejectionReason": "sdfgsdf",
-          "rejectionNotes": "gsfdgsfdg"
-        },
-        {
-          "id": "6e967506-9e91-41a2-805a-2d5e08fb3975",
-          "date": "2023-03-15T21:17:18.159Z",
-          "stageName": "sdfgsdfg",
-          "stageType": "Offer",
-          "notes": "sdfgsdfg",
-          "employmentType": "full-time",
-          "jobStartDate": "2023-03-07T22:00:00.000Z",
-          "proposedCompensation": "3452345",
-          "jobBenefits": "sdfg",
-          "companyName": "dfgsdfg"
-        },
-        {
-          "id": "f370c7c0-d054-41a8-8fb3-9751594bd815",
-          "date": "2023-03-15T21:20:08.581Z",
-          "stageName": "asdfsdf",
-          "stageType": "Offer",
-          "notes": "adsfasdf",
-          "employmentType": "full-time",
-          "jobStartDate": "2023-03-17T22:00:00.000Z",
-          "proposedCompensation": "2341234",
-          "jobBenefits": "adsf"
-        }
-      ],
-      "date": "2023-03-09T19:57:01.942Z",
-      "currentStageId": "f370c7c0-d054-41a8-8fb3-9751594bd815"
+      "id": "01856d3e-d1b0-4c0c-883f-23ebf71bd487",
+      "date": "2023-03-25T09:30:57.336Z",
+      "stageName": "3e3434",
+      "stageType": "Offer",
+      "notes": "sdfgsdfg",
+      "employmentType": "part-time",
+      "jobStartDate": "2023-03-02T22:00:00.000Z",
+      "proposedCompensation": "4352345",
+      "jobBenefits": "dfgsgdfg",
+      "vacancyId": "641df429fb6bb8256d512bdf"
     }
   ]
 }

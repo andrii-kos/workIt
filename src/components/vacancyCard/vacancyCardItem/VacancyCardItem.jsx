@@ -1,7 +1,8 @@
 import { Typography, Grid, Chip } from '@mui/material';
-import { Key } from '@mui/icons-material';
+import CardMenu from '../cardMenu/CardMenu';
 
 const VacancyCardItem = (props) => {
+  const { stages, vacancy, setSelectedCardId, selectedCardId, currentStage} = props;
   const {
     vacancyName,
     workingModel,
@@ -12,12 +13,8 @@ const VacancyCardItem = (props) => {
     hiringManager,
     vacancyDescription,
     companyName,
-    setSelectedCardId,
-    selectedCardId,
-    currentStage,
     date
-  } = props;
-
+  } = vacancy;
   return (
     <Grid
       container
@@ -36,11 +33,14 @@ const VacancyCardItem = (props) => {
       })}
       onClick={() => setSelectedCardId(id)}
     >
-      <Grid item xs={12} sm={12} xl={12}>
-        <Typography variant="vacancyName">{vacancyName} </Typography>
-        <Typography variant='companyName'>{companyName},</Typography>
-        <Typography variant='location'> {location}</Typography>
-        <Typography variant="salaryExpectation"> {salaryExpectation}$</Typography>
+      <Grid container justifyContent="space-between" item xs={12} sm={12} xl={12}>
+        <Grid item>
+          <Typography variant="vacancyName">{vacancyName} </Typography>
+          <Typography variant='companyName'>{companyName},</Typography>
+          <Typography variant='location'> {location}</Typography>
+          <Typography variant="salaryExpectation"> {salaryExpectation}$</Typography>
+        </Grid>
+        <CardMenu vacancy={vacancy} stages={stages} />
       </Grid>
       <Grid mt={1} item xs={12} sm={12} xl={12}>
         <Typography component={'span'} mr={1}>Hiring Manager</Typography>

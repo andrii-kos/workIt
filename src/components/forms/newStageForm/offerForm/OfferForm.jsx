@@ -2,7 +2,7 @@ import InputField from "../../formFields/InputField";
 import ToggleField from "../../formFields/ToggleField";
 import DatePickerField from "../../formFields/DatePickerField";
 import stageFormModel from "../formModel/stageFormModel";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, buttonBaseClasses, Grid, Typography } from "@mui/material";
 
 const OfferForm = () => {
   const {
@@ -11,6 +11,7 @@ const OfferForm = () => {
       jobStartDate,
       proposedCompensation,
       jobBenefits,
+      
       notes,
     }
   } = stageFormModel;

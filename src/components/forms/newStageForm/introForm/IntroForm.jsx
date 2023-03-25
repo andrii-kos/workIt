@@ -1,10 +1,9 @@
 import InputField from "../../formFields/InputField";
 import SelectField from "../../formFields/SelectField";
-import { useSelector } from 'react-redux';
 import { Box } from "@mui/system";
 import stageFormModel from "../formModel/stageFormModel";
 
-const IntroForm = () => {
+const IntroForm = ({stage}) => {
   const stageTypes = ['Application', 'Interview', 'Offer', 'Rejection'];
   const {
     formField: {
@@ -19,6 +18,7 @@ const IntroForm = () => {
         data={stageTypes} 
         name={stageType.name} 
         label={stageType.label} 
+        disabled={Boolean(stage)}
       />
       <InputField 
         name={stageName.name} 

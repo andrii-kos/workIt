@@ -1,30 +1,28 @@
-import { Grid, IconButton, Box, Typography, Chip, Button } from "@mui/material";
+import { Grid, IconButton, Typography, Chip, Button } from "@mui/material";
 import { useNavigate } from "react-router";
+import { useRef } from "react";
+import { Close } from '@mui/icons-material';
+
 import ApplicationCard from '../applicationCard/ApplicationCard';
 import InterviewCard from '../interviewCard/InterviewCard';
 import OfferCard from '../offerCard/OfferCard';
 import RejectionCard from '../rejectionCard/RejectionCard';
-import StageControl from '../../stageControl/StageControl';
-import { Close } from '@mui/icons-material';
 
-const CardDetailed = (props) => {
+import StageControl from '../../stageControl/StageControl';
+
+const DetailedCard = ({vacancy, stages, setSelectedCardId, getArrayItemById}) => {
   const {
     id,
     vacancyName,
-    workingModel,
-    businessModel,
     location,
     salaryExpectation,
     hiringManager,
-    vacancyDescription,
     companyName,
     currentStageId,
-    stages,
-  } = props.vacancy;
+  } = vacancy;
 
-  const { setSelectedCardId, getCurrentStageById } = props;
-
-  const currentStage = getCurrentStageById(stages, currentStageId);
+  const cardContainerRef = useRef(null);
+  const currentStage = getArrayItemById(stages, currentStageId);
   const { stageType } = Object(currentStage);
   const navigate = useNavigate()
 
@@ -45,6 +43,7 @@ const CardDetailed = (props) => {
 
   return (
     <Grid
+      ref={cardContainerRef}
       container
       sx={(theme) => ({
         position: 'sticky',
@@ -90,7 +89,7 @@ const CardDetailed = (props) => {
                 <Typography mr={1}>Current Stage Name</Typography>
               </Grid>
               <Grid item xs={12} sm={12} xl={'auto'}>
-                <StageControl vacancy={props.vacancy}/>
+                <StageControl cardContainerRef={cardContainerRef} stages={stages} vacancy={vacancy}/>
               </Grid>
             </Grid>
           : <Button 
@@ -106,4 +105,4 @@ const CardDetailed = (props) => {
   )
 }
 
-export default CardDetailed
+export default DetailedCard

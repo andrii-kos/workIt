@@ -18,7 +18,7 @@ const vacancyFormModel =  {
       label: 'Working Model',
       requiredErrorMsg: 'Working Model Is Required',
     },
-    company: {
+    companyName: {
       name: 'companyName',
       label: 'Company Name',
       requiredErrorMsg: 'Company Name Is Required',
@@ -52,11 +52,6 @@ const vacancyFormModel =  {
       label: 'Vacancy Description',
       requiredErrorMsg: 'Vacancy Description Is Required',
       minErrorMsg: 'Must be at least 4 characters',
-    },
-    vacancyPriority: {
-      name: 'vacancyPriority',
-      label: 'Vacancy Priority',
-      requiredErrorMsg: 'Vacancy Priority Is Required',
     }
   }
 }
