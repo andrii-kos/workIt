@@ -6,7 +6,8 @@ import { useDispatch } from 'react-redux';
 
   
 export default function MenuList(props) {
-  const { stages, activeButton, id: vacancyId, setOpenEditDialog, handleCloseMenu, setEditStageId } = props;
+  const { stages, activeButton, setOpenEditDialog, handleCloseMenu, setEditStageId } = props;
+  const { id: vacancyId } = props.vacancy;
   const [ open, setOpen ] = useState(null);
   const dispatch = useDispatch();
   const openNestedList = () => {

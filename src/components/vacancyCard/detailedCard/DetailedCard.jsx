@@ -92,13 +92,19 @@ const DetailedCard = ({vacancy, stages, setSelectedCardId, getArrayItemById}) =>
                 <StageControl cardContainerRef={cardContainerRef} stages={stages} vacancy={vacancy}/>
               </Grid>
             </Grid>
-          : <Button 
-              fullWidth 
-              variant="outlined"
-              onClick={() => navigate(`newStage/${id}`)}
-            >
-              Add New Stage
-            </Button>
+            
+          : 
+            <Grid mt={2} container display="flex" alignItems="center">
+              <Grid item xs={12} sm={12} xl={'auto'}>
+                <Button 
+                  fullWidth 
+                  variant="outlined"
+                  onClick={() => navigate(`newStage/${id}`)}
+                >
+                  Add New Stage
+                </Button>
+              </Grid>
+            </Grid>
       } 
       {renderCardContent(stageType)}
     </Grid>

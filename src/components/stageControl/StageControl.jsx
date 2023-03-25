@@ -17,8 +17,6 @@ import {
 
 import { updateCurrentStageId } from '../vacanciesCards/VacancySlice';
 
-
-
 const StageControl = (props) => {
   const { cardContainerRef } = props;
   const navigate = useNavigate();

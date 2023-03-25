@@ -4,8 +4,6 @@ import useHttp from '../../hooks/useHttp';
 const initialState = {
   vacancies: [],
   loadingStatus: 'iddle',
-  postingStatus: 'iddle',
-  updatingStatus: 'iddle',
 }
 
 export const fetchVacancies = createAsyncThunk(
@@ -76,18 +74,18 @@ const VacancySlice = createSlice({
       })
 
       .addCase(postNewVacancy.pending, state => {
-        state.postingStatus = 'posting';
+        state.loadingStatus = 'loading';
       })
       .addCase(postNewVacancy.fulfilled, (state, action) => {
-        state.postingStatus = 'iddle';
+        state.loadingStatus = 'iddle';
         state.vacancies.push(action.payload);
       })
       .addCase(postNewVacancy.rejected, state => {
-        state.postingStatus = 'error';
+        state.loadingStatus = 'error';
       })
 
       .addCase(updateVacancy.pending, state => {
-        state.updatingStatus = 'updating';
+        state.loadingStatus = 'loading';
       })
       .addCase(updateVacancy.fulfilled, (state, action) => {
         state.vacancies = state.vacancies.map(elem => {
@@ -107,15 +105,15 @@ const VacancySlice = createSlice({
         state.loadingStatus = 'loading';
       })
       .addCase(deleteVacancy.fulfilled, (state, action) => {
-        state.loadingStatus = 'iddle';
+        state.loadingStatus = 'success';
         state.vacancies = state.vacancies.filter(elem => elem.id !== action.meta.arg);
       })
-      .addCase(deleteVacancy, state => {
-        state.postingStatus = 'error';
+      .addCase(deleteVacancy.rejected, state => {
+        state.loadingStatus = 'error';
       })
 
       .addCase(updateCurrentStageId.pending, state => {
-        state.updatingStatus = 'updating';
+        state.loadingStatus = 'loading';
       })
       .addCase(updateCurrentStageId.fulfilled, (state, {payload}) => {
         state.loadingStatus = 'iddle';

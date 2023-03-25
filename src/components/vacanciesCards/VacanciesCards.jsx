@@ -1,11 +1,14 @@
 import { Box, Grid } from '@mui/material';
-import VacancyCardItem from "../vacancyCard/vacancyCardItem/VacancyCardItem";
-import DetailedCard from '../vacancyCard/detailedCard/DetailedCard';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
+import { createSelector } from '@reduxjs/toolkit';
+
+import VacancyCardItem from "../vacancyCard/vacancyCardItem/VacancyCardItem";
+import DetailedCard from '../vacancyCard/detailedCard/DetailedCard';
+import AlertMessage from '../alertMessage/AlertMessage';
 import { fetchVacancies } from './VacancySlice';
 import { fetchStages } from '../stageControl/StageSlice';
-import { createSelector } from '@reduxjs/toolkit';
+
 
 const vacanciesWithStages = createSelector(
   state => state.vacancies.vacancies,
@@ -16,6 +19,7 @@ const vacanciesWithStages = createSelector(
 const VacanciesCards = () => {
   const dispatch = useDispatch();
   const { stages, vacancies } = useSelector(vacanciesWithStages);
+  const { loadingStatus } = useSelector(state => state.vacancies);
   const [ selectedCardId, setSelectedCardId ] = useState(null);
   useEffect(() => {
     dispatch(fetchStages());
@@ -51,7 +55,7 @@ const VacanciesCards = () => {
   };
 
   return (
-    <Box py={10} px={20}>
+    <Box py={10} px={20} position="relative">
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6} xl={6}>
           {rendeCardsList(vacancies, stages)}
@@ -66,6 +70,7 @@ const VacanciesCards = () => {
             />
           </Grid>}
       </Grid> 
+      {loadingStatus !== ('iddle' || 'loading') && <AlertMessage loadingStatus={loadingStatus} />}
     </Box>
     
   )
