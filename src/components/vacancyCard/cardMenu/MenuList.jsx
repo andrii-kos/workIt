@@ -1,20 +1,22 @@
 import { useState } from 'react';
-import { Collapse, ListItemText, List, ListItemButton } from '@mui/material';
+import { Collapse, ListItemText, ListItemIcon, List, ListItemButton, Divider, Box } from '@mui/material';
+import { KeyboardArrowRight, ExpandLess, ExpandMore} from '@mui/icons-material/';
 import { deleteVacancy } from '../../vacanciesCards/VacancySlice';
 import { deleteStage } from '..//../stageControl/StageSlice';
 import { useDispatch } from 'react-redux';
-
   
 export default function MenuList(props) {
   const { stages, activeButton, setOpenEditDialog, handleCloseMenu, setEditStageId } = props;
-  const { id: vacancyId } = props.vacancy;
+  const { id: vacancyId, vacancyName } = props.vacancy;
   const [ open, setOpen ] = useState(null);
   const dispatch = useDispatch();
-  const openNestedList = () => {
+  const openNestedList = (event) => {
+    event.stopPropagation();
     setOpen(open => !open);
   };
 
-  const handleVacancyClick = () => {
+  const handleVacancyClick = (event) => {
+    event.stopPropagation();
     if (activeButton === 'edit') {
       setOpenEditDialog(true);
       handleCloseMenu();
@@ -24,7 +26,8 @@ export default function MenuList(props) {
     };
   };
 
-  const handleStageClick = (id) => {
+  const handleStageClick = (event, id) => {
+    event.stopPropagation();
     if (activeButton === 'edit') {
       setEditStageId(id);
       setOpenEditDialog(true);
@@ -37,22 +40,28 @@ export default function MenuList(props) {
   return (
     <List>
       <ListItemButton>
-        <ListItemText primary="Vacancy" onClick={handleVacancyClick} />
+        <ListItemText sx={{fontWeight: 700}} primary={vacancyName} onClick={handleVacancyClick} />
       </ListItemButton>
       {
         stages.length !== 0 && 
           <ListItemButton onClick={openNestedList}>
             <ListItemText primary="Stages" />
+            {open ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
         }
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           { 
-            stages.map(({stageName, id}) => {
+            stages.map(({stageName, id}, index) => {
               return (
-                <ListItemButton key={id} onClick={() => handleStageClick(id)} sx={{ pl: 4 }}>
-                  <ListItemText primary={stageName} />
-                </ListItemButton>
+                <Box key={id}>
+                  <Divider />
+                  <ListItemButton  onClick={(event) => handleStageClick(event, id)} sx={{ pl: 4 }}>
+                    <ListItemIcon><KeyboardArrowRight /></ListItemIcon>
+                    <ListItemText primary={stageName} />
+                  </ListItemButton>
+                </Box>
+                
               )
           })
           }

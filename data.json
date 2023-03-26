@@ -134,6 +134,19 @@
       "vacancyDescription": "Magna ea magna cillum duis aliqua aliqua non in sint Lorem nulla fugiat aute do. Dolor laborum laborum mollit sint enim elit ex velit quis sint nisi. Excepteur fugiat amet occaecat cupidatat dolor aliquip velit fugiat aute aliquip.",
       "currentStageId": "50e01c25-cd64-4627-846a-bf839183bbb6",
       "date": "2010-09-29T11:38:27.417Z"
+    },
+    {
+      "vacancyName": "Front End Developer",
+      "vacancyURL": "sfdlkjsdfg",
+      "workingModel": "Remote",
+      "companyName": "Tip Top Trade",
+      "location": "Damask",
+      "businessModel": "Outstaffing",
+      "salaryExpectation": "9999",
+      "hiringManager": "Anna Peterson",
+      "vacancyDescription": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "id": "75a1a315-c3b0-4656-a253-99e134917839",
+      "date": "2023-03-26T20:24:04.224Z"
     }
   ],
   "stages": [

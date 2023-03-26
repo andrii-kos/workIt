@@ -16,18 +16,21 @@ const CardMenu = (props) => {
   const [ activeButton, setActiveButton ] = useState(null)
   
   const handleEditButton = (event) => {
-    setActiveButton('edit')
+    event.stopPropagation();
+    setActiveButton('edit');
     setAnchorEl(event.currentTarget);
     setMenuOpen(true);
   };
 
   const handleDeleteButton = (event) => {
+    event.stopPropagation();
     setActiveButton('delete');
     setAnchorEl(event.currentTarget);
     setMenuOpen(true);
   };
 
-  const handleCloseMenu = () => {
+  const handleCloseMenu = (event) => {
+    event.stopPropagation();
     setMenuOpen(false);
   };
   const handleCloseDialog = () => {

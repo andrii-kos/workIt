@@ -38,21 +38,21 @@ const VacanciesCards = () => {
       return <p>There is no vacancies</p>
     };
 
-    const renderCard = (vacancy, id, stages) => {
-      const { currentStageId } = vacancy;
+    const renderCard = (vacancy, stages) => {
+      const { id, currentStageId } = vacancy;
       return (
         <VacancyCardItem
           setSelectedCardId={setSelectedCardId}
           selectedCardId={selectedCardId}
           key={id} 
-          stages={stages.filter(elem => elem.vacancyId === selectedCardId)}
+          stages={stages.filter(elem => elem.vacancyId === id)}
           vacancy={vacancy} 
           currentStage={getArrayItemById(stages, currentStageId)} 
         />  
       )
     };
     
-    return vacancies.map((vacancy, id) => renderCard(vacancy, id, stages)
+    return vacancies.map((vacancy) => renderCard(vacancy, stages)
     )
   };
 
@@ -61,7 +61,7 @@ const VacanciesCards = () => {
       <Backdrop open={Boolean(vacancyStatus.fetch === 'loading')} />
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6} xl={6}>
-          {rendeCardsList(vacancies, stages, )}
+          {rendeCardsList(vacancies, stages)}
         </Grid>
         {getArrayItemById(vacancies, selectedCardId) && 
           <Grid item xs={12} sm={6} xl={6}>
