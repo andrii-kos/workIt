@@ -4,9 +4,14 @@ import { updateCurrentStageId } from '../vacanciesCards/VacancySlice';
 
 const initialState = {
   stages: [],
-  loadingStatus: 'iddle',
-  postingStatus: 'iddle',
-  updatingStatus: 'iddle',
+  status: {
+    fetch: 'iddle',
+    post: 'iddle',
+    update: 'iddle',
+    delete: 'iddle',
+  },
+  errorMessage: {}
+  
 };
 
 export const fetchStages = createAsyncThunk(
@@ -75,54 +80,52 @@ const StageSlice = createSlice({
   reducers: {},
   extraReducers(builder) {
     builder
-      .addCase(fetchStages.pending, state=> {
-        state.updatingStatus = 'updating';
+      .addCase(fetchStages.pending, state => {
+        state.status.fetch = 'loading';
       })
       .addCase(fetchStages.fulfilled, (state, {payload}) => {
-        state.updatingStatus = 'iddle';
         state.stages = payload;
+        state.status.fetch = 'success';
       })
-      .addCase(fetchStages.rejected, state => {
-        state.loadingStatus = 'error';
+      .addCase(fetchStages.rejected, (state, {error}) => {
+        state.status.fetch = 'error';
+        state.errorMessage = error;
       })
 
-      .addCase(postNewStage.pending, (state) => {
-        state.updatingStatus = 'updating';
+      .addCase(postNewStage.pending, state => {
+        state.status.post = 'loading';
       })
       .addCase(postNewStage.fulfilled, (state, {payload}) => {
-        state.loadingStatus = 'iddle';
-        state.stages.push(payload)
+        state.stages.stages.push(payload);
+        state.status.post = 'success';
       })
-      .addCase(postNewStage.rejected, state => {
-        state.loadingStatus = 'error';
+      .addCase(postNewStage.rejected, (state, {error}) => {
+        state.status.post = 'error';
+        state.errorMessage = error;
       })
 
-      .addCase(updateStage.pending, state => {
-        state.updatingStatus = 'updating';
+      .addCase(updateStage.pending, (state) => {
+        state.status.update = 'loading';
       })
-      .addCase(updateStage.fulfilled, (state, action) => {
-        state.stages = state.stages.map(elem => {
-          if (elem.id === action.payload.id) {
-            return action.payload
-          } else {
-            return elem
-          }
-        })
-        state.loadingStatus = 'iddle';
+      .addCase(updateStage.fulfilled, (state, {payload}) => {
+        state.stages = state.stages.map(stage => stage.id === payload.id ? payload : stage);
+        state.status.update = 'success';
       })
-      .addCase(updateStage.rejected, state => {
-        state.loadingStatus = 'error';
+      .addCase(updateStage.rejected, (state, {error}) => {
+        state.status.update = 'error';
+        state.errorMessage = error;
       })
 
       .addCase(deleteStage.pending, state => {
-        state.updatingStatus = 'updating';
+        state.status.delete = 'loading';
       })
       .addCase(deleteStage.fulfilled, (state, {meta}) => {
         state.stages = state.stages.filter(({id}) => id !== meta.arg.id)
-        state.loadingStatus = 'iddle';
+        state.status.loadingStatus = 'success';
       })
-      .addCase(deleteStage.rejected, (state, action) => {
-        state.loadingStatus = 'error';
+      .addCase(deleteStage.rejected, (state, {error}) => {
+        state.status.delete = 'error';
+        state.errorMessage = error;
       })
   }
 });

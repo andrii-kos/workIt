@@ -20,6 +20,7 @@ export default function MenuList(props) {
       handleCloseMenu();
     } else if (activeButton === 'delete') {
       dispatch(deleteVacancy(vacancyId));
+      handleCloseMenu();
     };
   };
 

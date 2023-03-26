@@ -3,7 +3,15 @@ import useHttp from '../../hooks/useHttp';
 
 const initialState = {
   vacancies: [],
-  loadingStatus: 'iddle',
+  status: {
+    fetch: 'iddle',
+    post: 'iddle',
+    update: 'iddle',
+    delete: 'iddle',
+    updateCurrentId: 'iddle'
+  },
+  errorMessage: {}
+  
 }
 
 export const fetchVacancies = createAsyncThunk(
@@ -25,7 +33,6 @@ export const postNewVacancy = createAsyncThunk(
 export const updateVacancy = createAsyncThunk(
   'vacancy/updateVacancy',
   ({id, updatedVacancy}) => {
-    console.log(updatedVacancy)
     const { request } = useHttp();
     return request(
       `http://localhost:3000/vacancies/${id}`,
@@ -45,8 +52,7 @@ export const deleteVacancy = createAsyncThunk(
 
 export const updateCurrentStageId = createAsyncThunk(
   'stages/updateCurrentStageId',
-  (data) => {
-    const { id, currentStageId } = data;
+  ({id, currentStageId}) => {
     const { request } = useHttp();
     return request(
       `http://localhost:3000/vacancies/${id}`, 
@@ -63,71 +69,70 @@ const VacancySlice = createSlice({
   extraReducers(builder) {
     builder
       .addCase(fetchVacancies.pending, state => {
-        state.loadingStatus = 'loading';
+        state.status.fetch = 'loading';
       })
-      .addCase(fetchVacancies.fulfilled, (state, action) => {
-        state.loadingStatus = 'iddle';
-        state.vacancies = action.payload;
+      .addCase(fetchVacancies.fulfilled, (state, {payload}) => {
+        state.vacancies = payload;
+        state.status.fetch = 'success';
       })
-      .addCase(fetchVacancies.rejected, (state) => {
-        state.loadingStatus = 'error';
+      .addCase(fetchVacancies.rejected, (state, {error}) => {
+        state.status.fetch = 'error';
+        state.errorMessage = error;
       })
 
       .addCase(postNewVacancy.pending, state => {
-        state.loadingStatus = 'loading';
+        state.status.post = 'loading';
       })
-      .addCase(postNewVacancy.fulfilled, (state, action) => {
-        state.loadingStatus = 'iddle';
-        state.vacancies.push(action.payload);
+      .addCase(postNewVacancy.fulfilled, (state, {payload}) => {
+        state.vacancies.push(payload);
+        state.status.post = 'success';
       })
-      .addCase(postNewVacancy.rejected, state => {
-        state.loadingStatus = 'error';
+      .addCase(postNewVacancy.rejected, (state, {error}) => {
+        state.status.post = 'error';
+        state.errorMessage = error;
       })
 
       .addCase(updateVacancy.pending, state => {
-        state.loadingStatus = 'loading';
+        state.status.update = 'loading';
       })
-      .addCase(updateVacancy.fulfilled, (state, action) => {
-        state.vacancies = state.vacancies.map(elem => {
-          if (elem.id === action.payload.id) {
-            return action.payload
-          } else {
-            return elem
-          }
-        })
-        state.loadingStatus = 'iddle';
+      .addCase(updateVacancy.fulfilled, (state, {payload}) => {
+        state.vacancies = state.vacancies.map(vacancy => (vacancy.id === payload.id ? payload : vacancy))
+        state.status.update = 'success';
       })
-      .addCase(updateVacancy.rejected, state => {
-        state.loadingStatus = 'error';
+      .addCase(updateVacancy.rejected, (state, {error}) => {
+        state.status.fetch = 'update';
+        state.errorMessage = error;
       })
 
       .addCase(deleteVacancy.pending, state => {
-        state.loadingStatus = 'loading';
+        state.status.delete = 'loading';
       })
-      .addCase(deleteVacancy.fulfilled, (state, action) => {
-        state.loadingStatus = 'success';
-        state.vacancies = state.vacancies.filter(elem => elem.id !== action.meta.arg);
+      .addCase(deleteVacancy.fulfilled, (state, {meta}) => {
+        state.vacancies = state.vacancies.filter(elem => elem.id !== meta.arg);
+        state.status.delete = 'success';
       })
-      .addCase(deleteVacancy.rejected, state => {
-        state.loadingStatus = 'error';
+      .addCase(deleteVacancy.rejected, (state, {error}) => {
+        state.status.delete = 'error';
+        state.errorMessage = error;
       })
 
       .addCase(updateCurrentStageId.pending, state => {
-        state.loadingStatus = 'loading';
+        state.status.updateCurrentId = 'loading';
       })
       .addCase(updateCurrentStageId.fulfilled, (state, {payload}) => {
-        state.loadingStatus = 'iddle';
-        state.vacancies.map(elem => {
-          if (elem.id === payload.id) {
-            elem.currentStageId = payload.currentStageId;
-            return elem
+        state.vacancies.map(vacancy => {
+          if (vacancy.id === payload.id) {
+            vacancy.currentStageId = payload.currentStageId;
+            return vacancy
           } else {
-            return elem
+            return vacancy
           }
-        })
+        });
+        state.status.updateCurrentId = 'success';
       })
-      .addCase(updateCurrentStageId.rejected, state => {
-        state.loadingStatus = 'error';
+      .addCase(updateCurrentStageId.rejected, (state, {error}) => {
+        state.status.updateCurrentId = 'error';
+        state.errorMessage = error;
       })
   }
 });
