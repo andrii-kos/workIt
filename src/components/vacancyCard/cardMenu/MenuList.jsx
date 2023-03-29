@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Collapse, ListItemText, ListItemIcon, List, ListItemButton, Divider, Box } from '@mui/material';
 import { KeyboardArrowRight, ExpandLess, ExpandMore} from '@mui/icons-material/';
-import { deleteVacancy } from '../../vacanciesCards/VacancySlice';
+import { removeVacancy } from '../../vacanciesCards/VacancySlice';
 import { deleteStage } from '..//../stageControl/StageSlice';
 import { useDispatch } from 'react-redux';
   
@@ -21,7 +21,7 @@ export default function MenuList(props) {
       setOpenEditDialog(true);
       handleCloseMenu();
     } else if (activeButton === 'delete') {
-      dispatch(deleteVacancy(vacancyId));
+      dispatch(removeVacancy(vacancyId));
       handleCloseMenu();
     };
   };

@@ -107,7 +107,6 @@ const NewStageForm = ({stage, handleCloseDialog}) => {
     } else {
       dispatch(postNewStage({id: vacancyId, newStage: {id, date, ...getFilledValues(values)}}))
     }
-    actions.resetForm()
   }
 
   const handleBack = () => {
@@ -125,7 +124,7 @@ const NewStageForm = ({stage, handleCloseDialog}) => {
         break
       case 1:
         submitForm(actions, values);
-        navigate('/');
+        navigate(-1)
         break
       default:
         setActiveStep(activeStep + 1)

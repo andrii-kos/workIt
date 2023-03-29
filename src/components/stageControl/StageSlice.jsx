@@ -24,7 +24,7 @@ export const fetchStages = createAsyncThunk(
 
 export const postNewStage = createAsyncThunk(
   'stages/postNewStage',
-  async (data, thunkAPI) => {
+  async (data, {dispatch}) => {
     const { id, newStage } = data;
     const { id: stageId } = newStage;
     const { request } = useHttp();
@@ -33,7 +33,7 @@ export const postNewStage = createAsyncThunk(
       'POST', 
       JSON.stringify({...newStage, vacancyId: id})
     );
-    thunkAPI.dispatch(updateCurrentStageId({id, currentStageId: stageId}));
+    dispatch(updateCurrentStageId({id, currentStageId: stageId}));
     return response
   }
 );
@@ -96,7 +96,7 @@ const StageSlice = createSlice({
         state.status.post = 'loading';
       })
       .addCase(postNewStage.fulfilled, (state, {payload}) => {
-        state.stages.stages.push(payload);
+        state.stages.push(payload);
         state.status.post = 'success';
       })
       .addCase(postNewStage.rejected, (state, {error}) => {

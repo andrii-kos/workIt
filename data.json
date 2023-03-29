@@ -1,81 +1,6 @@
 {
   "vacancies": [
     {
-      "id": "641df42963e436ffb0b5e3b6",
-      "vacancyName": "occaecat",
-      "vacancyURL": "https://codebeautify.org/random-link-generator",
-      "workingModel": "Remote",
-      "companyName": "Farmex",
-      "location": "Thornport",
-      "businessModel": "Outstaffing",
-      "salaryExpectation": 2681.28,
-      "hiringManager": "Audrey Guerra",
-      "recruiterLinkedIn": "do",
-      "vacancyDescription": "Laboris veniam elit est cillum fugiat. Excepteur mollit deserunt esse ea fugiat adipisicing ea esse eiusmod culpa est adipisicing sunt exercitation. Ad occaecat laborum commodo esse eiusmod anim consectetur adipisicing officia occaecat nulla laboris excepteur.",
-      "currentStageId": "27416b6e-d192-46ee-bdec-b8d400259e21",
-      "date": "1982-08-13T03:18:53.958Z"
-    },
-    {
-      "id": "641df429fb6bb8256d512bdf",
-      "vacancyName": "consequat",
-      "vacancyURL": "https://codebeautify.org/random-link-generator",
-      "workingModel": "On-site",
-      "companyName": "Plasmos",
-      "location": "Albany",
-      "businessModel": "Outstaffing",
-      "salaryExpectation": 2184.64,
-      "hiringManager": "Susanne Mcneil",
-      "recruiterLinkedIn": "adipisicing",
-      "vacancyDescription": "Lorem minim aute aliquip pariatur adipisicing minim ut laborum sunt cupidatat. Id duis culpa dolor duis consequat. Reprehenderit occaecat labore sunt sit quis velit ipsum eu labore labore.",
-      "currentStageId": "4e6d3e20-9ac6-463e-b311-661fba24eaed",
-      "date": "2005-07-02T22:06:55.673Z"
-    },
-    {
-      "id": "641df42911da5ae04a3d803e",
-      "vacancyName": "pariatur",
-      "vacancyURL": "https://codebeautify.org/random-link-generator",
-      "workingModel": "Remote",
-      "companyName": "Nutralab",
-      "location": "Dorneyville",
-      "businessModel": "Outsourcing",
-      "salaryExpectation": 3104.73,
-      "hiringManager": "Cooper Case",
-      "recruiterLinkedIn": "id",
-      "vacancyDescription": "Duis reprehenderit nostrud pariatur tempor veniam qui laborum sunt cupidatat exercitation sunt ea cupidatat. Fugiat irure reprehenderit quis est aute enim et in nulla dolor labore commodo ipsum irure. Incididunt aute minim nisi pariatur adipisicing exercitation dolore ullamco mollit proident.",
-      "currentStageId": "f059b3e3-c77c-4734-b707-1ec109f970d6",
-      "date": "1999-01-02T01:01:44.886Z"
-    },
-    {
-      "id": "641df4297a8395d15eb320f1",
-      "vacancyName": "irure",
-      "vacancyURL": "https://codebeautify.org/random-link-generator",
-      "workingModel": "Remote",
-      "companyName": "Electonic",
-      "location": "Jacksonwald",
-      "businessModel": "Product",
-      "salaryExpectation": 6969.88,
-      "hiringManager": "Walls Castro",
-      "recruiterLinkedIn": "consectetur",
-      "vacancyDescription": "Anim non commodo velit voluptate officia non esse. Aliquip occaecat duis nostrud occaecat pariatur dolor adipisicing ex aliqua eiusmod enim occaecat velit amet. Dolor exercitation ea fugiat eu culpa mollit.",
-      "currentStageId": "50e01c25-cd64-4627-846a-bf839183bbb6",
-      "date": "1978-09-17T11:26:24.955Z"
-    },
-    {
-      "id": "641df429a9ffda68edbf742f",
-      "vacancyName": "Lorem",
-      "vacancyURL": "https://codebeautify.org/random-link-generator",
-      "workingModel": "On-site",
-      "companyName": "Shepard",
-      "location": "Cumminsville",
-      "businessModel": "Product",
-      "salaryExpectation": 6476.38,
-      "hiringManager": "Boyd Wilson",
-      "recruiterLinkedIn": "dolore",
-      "vacancyDescription": "Officia reprehenderit duis reprehenderit reprehenderit velit consectetur consectetur sit ea. Duis qui adipisicing enim nisi. Proident esse proident nisi do excepteur non nisi pariatur ad culpa exercitation voluptate cupidatat exercitation.",
-      "currentStageId": "50e01c25-cd64-4627-846a-bf839183bbb6",
-      "date": "1989-05-05T11:32:39.428Z"
-    },
-    {
       "id": "641df429c303b68bd2040169",
       "vacancyName": "nostrud",
       "vacancyURL": "https://codebeautify.org/random-link-generator",
@@ -91,36 +16,6 @@
       "date": "1990-12-01T16:47:29.658Z"
     },
     {
-      "id": "641df429cf34869ba16cf3c3",
-      "vacancyName": "cillum",
-      "vacancyURL": "https://codebeautify.org/random-link-generator",
-      "workingModel": "Remote",
-      "companyName": "Solaren",
-      "location": "Islandia",
-      "businessModel": "Outstaffing",
-      "salaryExpectation": 3024.24,
-      "hiringManager": "Underwood Boyd",
-      "recruiterLinkedIn": "id",
-      "vacancyDescription": "Ut occaecat reprehenderit cupidatat adipisicing nisi anim aliqua. Fugiat ea occaecat reprehenderit culpa amet eiusmod labore quis sint proident. Voluptate mollit anim elit ut nostrud do exercitation.",
-      "currentStageId": "50e01c25-cd64-4627-846a-bf839183bbb6",
-      "date": "1988-02-02T08:30:48.153Z"
-    },
-    {
-      "id": "641df429736c7c05b8fa8613",
-      "vacancyName": "id",
-      "vacancyURL": "https://codebeautify.org/random-link-generator",
-      "workingModel": "Hybrid",
-      "companyName": "Quarex",
-      "location": "Calpine",
-      "businessModel": "Outstaffing",
-      "salaryExpectation": 3822.14,
-      "hiringManager": "Meadows Cunningham",
-      "recruiterLinkedIn": "reprehenderit",
-      "vacancyDescription": "Ipsum enim adipisicing ex excepteur aute velit sit qui magna incididunt irure. Cupidatat tempor culpa aliquip quis duis dolor ex id id et voluptate elit. Quis cillum adipisicing sit cupidatat nisi ex occaecat.",
-      "currentStageId": "50e01c25-cd64-4627-846a-bf839183bbb6",
-      "date": "1999-10-10T22:32:46.141Z"
-    },
-    {
       "id": "641df42931025ceb48cac28d",
       "vacancyName": "aute",
       "vacancyURL": "https://codebeautify.org/random-link-generator",
@@ -132,207 +27,20 @@
       "hiringManager": "Park Newton",
       "recruiterLinkedIn": "ad",
       "vacancyDescription": "Magna ea magna cillum duis aliqua aliqua non in sint Lorem nulla fugiat aute do. Dolor laborum laborum mollit sint enim elit ex velit quis sint nisi. Excepteur fugiat amet occaecat cupidatat dolor aliquip velit fugiat aute aliquip.",
-      "currentStageId": "50e01c25-cd64-4627-846a-bf839183bbb6",
+      "currentStageId": "2c7d8784-8b94-4725-b61d-17c7e84eeb72",
       "date": "2010-09-29T11:38:27.417Z"
-    },
-    {
-      "vacancyName": "Front End Developer",
-      "vacancyURL": "sfdlkjsdfg",
-      "workingModel": "Remote",
-      "companyName": "Tip Top Trade",
-      "location": "Damask",
-      "businessModel": "Outstaffing",
-      "salaryExpectation": "9999",
-      "hiringManager": "Anna Peterson",
-      "vacancyDescription": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "id": "75a1a315-c3b0-4656-a253-99e134917839",
-      "date": "2023-03-26T20:24:04.224Z"
     }
   ],
   "stages": [
     {
-      "id": "6ed98524-3640-45f7-a043-a3abf5cf0572",
-      "date": "2022-08-01T19:46:07.240Z",
-      "stageName": "do",
-      "stageType": "Application",
-      "employmentType": "part-time",
-      "proposedCompensation": "$2,639.74",
-      "jobBenefits": "tempor deserunt duis reprehenderit ex eiusmod commodo fugiat adipisicing culpa",
-      "jobApplicationCoverLeter": "In quis officia ullamco laboris labore aute reprehenderit mollit. Tempor ut nisi quis pariatur eu eiusmod in. Laboris tempor amet reprehenderit dolor culpa consectetur occaecat elit amet esse. Id minim quis culpa eu sit minim irure culpa laborum sint cillum ullamco eu ipsum. Proident labore excepteur dolore aliqua officia commodo cupidatat eu sit ex minim voluptate. Magna amet eu aute ullamco ea cupidatat pariatur exercitation nostrud et laboris enim do reprehenderit.",
-      "jobApplicationNotes": "Eiusmod voluptate culpa veniam ut sit non proident proident consectetur veniam. Sunt tempor eiusmod commodo ex duis sunt reprehenderit ullamco qui nisi nostrud. Sint velit proident in consequat aute ex ut culpa. Lorem reprehenderit sit sunt non cupidatat mollit nulla. Excepteur eu irure id est sit.",
-      "vacancyId": "641df42963e436ffb0b5e3b6"
-    },
-    {
-      "id": "27308f59-0fe1-40a5-a1d1-0795f487c5cd",
-      "date": "2022-05-10T00:22:25.016Z",
-      "stageName": "velit",
-      "stageType": "Interview",
-      "interviewType": "CEO",
-      "location": "occaecat",
-      "interviewerNames": [
-        "McleanKnight"
-      ],
-      "interviewDate": "2022-12-25T16:24:21.246Z",
-      "questionsAndAnswers": [
-        {
-          "question": "dfhg",
-          "answer": "hghdfht"
-        }
-      ],
-      "notes": "Officia consectetur laboris velit aliquip velit velit. Ex pariatur est dolore est qui. Laboris magna consequat aute duis et in labore cillum adipisicing officia. Ad velit laborum laborum duis ea consectetur cillum sunt id tempor aliquip commodo fugiat et. Dolor aute et mollit pariatur est occaecat in sunt pariatur reprehenderit esse exercitation. Est amet mollit ullamco irure fugiat elit et non id occaecat eu laboris esse.",
-      "vacancyId": "641df42963e436ffb0b5e3b6"
-    },
-    {
-      "id": "27416b6e-d192-46ee-bdec-b8d400259e21",
-      "date": "2022-04-28T02:03:38.422Z",
-      "stageName": "elit",
+      "id": "2c7d8784-8b94-4725-b61d-17c7e84eeb72",
+      "date": "2023-03-28T20:09:50.200Z",
+      "stageName": "gfdgsdfg",
       "stageType": "Rejection",
-      "rejectionPersonName": "OdonnellDunlap",
-      "rejectionReason": "irure",
-      "rejectionNotes": "Nulla veniam ut laborum fugiat fugiat. Ullamco nisi amet laboris tempor eiusmod nulla pariatur labore qui nisi ad magna. Amet aliqua pariatur anim enim sit quis duis sit ullamco excepteur esse do tempor velit. Sunt culpa ea ullamco nulla cillum Lorem velit exercitation. Esse labore veniam ipsum adipisicing anim nisi enim commodo consequat esse ipsum tempor.",
-      "vacancyId": "641df42963e436ffb0b5e3b6"
-    },
-    {
-      "id": "f8fdc0c1-7c2d-4dde-9982-b75098af6f8b",
-      "date": "2022-02-12T02:32:19.698Z",
-      "stageName": "ut",
-      "stageType": "Rejection",
-      "rejectionPersonName": "WalterMacias",
-      "rejectionReason": "cillum",
-      "rejectionNotes": "Occaecat est exercitation sint ea incididunt ea. Consequat exercitation eiusmod duis dolor aliquip nulla ipsum commodo. Eiusmod id id consequat dolor est.",
-      "vacancyId": "641df429fb6bb8256d512bdf"
-    },
-    {
-      "id": "4e6d3e20-9ac6-463e-b311-661fba24eaed",
-      "date": "2022-09-24T21:30:50.056Z",
-      "stageName": "eu",
-      "stageType": "Rejection",
-      "rejectionPersonName": "BeasleyPena",
-      "rejectionReason": "anim",
-      "rejectionNotes": "Occaecat id consectetur eiusmod quis aliquip nulla aliqua id culpa ea. Dolor dolore tempor aliquip ex nulla culpa cillum. Magna incididunt aute eu veniam esse. Lorem sunt sint consectetur minim dolore sunt et aliqua cupidatat ut veniam tempor. Fugiat nulla nisi est voluptate fugiat do consequat Lorem veniam. Aliqua velit commodo quis sunt. Irure ut nisi consequat aliqua est dolor ea elit occaecat id culpa eu.",
-      "vacancyId": "641df429fb6bb8256d512bdf"
-    },
-    {
-      "id": "f059b3e3-c77c-4734-b707-1ec109f970d6",
-      "date": "2022-02-25T20:54:25.371Z",
-      "stageName": "elit",
-      "stageType": "Offer",
-      "notes": "Magna pariatur fugiat consequat dolor est dolore qui. Fugiat ut sunt consectetur magna commodo excepteur eiusmod occaecat. Do ad amet quis ad enim cillum ipsum officia incididunt commodo sit est labore adipisicing.\n\nAute aute mollit incididunt deserunt ipsum irure. Officia ipsum in elit fugiat eiusmod irure sunt est irure nulla dolor. In veniam dolor nulla cillum enim ullamco duis sint reprehenderit sit. Sit tempor officia ipsum ea consectetur minim voluptate exercitation mollit fugiat non. Sit duis nostrud id ullamco sit incididunt ipsum id. Officia proident est minim nostrud sint eiusmod ea voluptate eu.",
-      "employmentType": "part-time",
-      "jobStartDate": "2022-08-01T17:23:34.450Z",
-      "proposedCompensation": "$1,025.22",
-      "jobBenefits": "Nisi ex culpa anim tempor velit qui dolor nisi. Minim nulla sit cupidatat tempor nisi mollit fugiat amet fugiat cillum quis Lorem. Eu magna aliquip ea eu nisi elit fugiat amet amet laboris. Reprehenderit sint officia nostrud nisi ea nostrud ipsum. Cupidatat enim cillum sint aute veniam duis voluptate irure adipisicing fugiat. Adipisicing deserunt magna reprehenderit esse est ut consequat velit velit aliquip cupidatat ea commodo eiusmod.",
-      "vacancyId": "641df42911da5ae04a3d803e"
-    },
-    {
-      "id": "be8261c8-7602-45b1-9cca-0afcdfed9d9a",
-      "date": "2022-09-20T12:41:38.505Z",
-      "stageName": "qui",
-      "stageType": "Offer",
-      "notes": "Tempor amet ad fugiat deserunt tempor reprehenderit commodo Lorem laborum veniam sunt Lorem aute. In cillum aliqua ullamco fugiat labore. Sint ex duis eiusmod sit dolor eiusmod ut culpa ea.\n\nSunt dolor ipsum officia amet quis fugiat in ex quis id nisi do magna. In qui aliqua labore sit et elit voluptate deserunt irure. Minim enim fugiat consequat laborum incididunt enim deserunt anim quis. Consequat ullamco quis ipsum laboris eiusmod officia. Irure pariatur non mollit laborum in. Deserunt ullamco esse velit eiusmod et minim aliquip est. Consequat labore eu adipisicing duis mollit irure.",
-      "employmentType": "part-time",
-      "jobStartDate": "2022-06-08T04:35:10.947Z",
-      "proposedCompensation": "$3,973.37",
-      "jobBenefits": "Duis tempor quis dolore eiusmod. Dolor voluptate eiusmod ad amet adipisicing aute ex eiusmod et do proident. Dolore labore officia qui nulla dolore. Officia pariatur quis adipisicing culpa culpa duis sint.",
-      "vacancyId": "641df42911da5ae04a3d803e"
-    },
-    {
-      "id": "f51a03ab-a383-48ff-97a2-33c4683ff649",
-      "date": "2022-07-18T03:36:21.880Z",
-      "stageName": "elit",
-      "stageType": "Application",
-      "employmentType": "full-time",
-      "proposedCompensation": "$3,063.91",
-      "jobBenefits": "mollit aliqua consectetur in qui tempor eu amet non irure",
-      "jobApplicationCoverLeter": "Officia dolore culpa id culpa reprehenderit occaecat magna dolor aliqua labore culpa dolore. Id sint enim magna et quis. Incididunt est adipisicing enim aliquip sit qui elit aliqua. Duis occaecat ipsum velit dolore labore fugiat eiusmod deserunt cillum. Ea ad aute cupidatat cillum laboris consectetur occaecat veniam ad anim ullamco laboris minim.",
-      "jobApplicationNotes": "Veniam duis ipsum laboris nulla. Esse nisi ut id sunt eu consequat culpa enim velit nulla in sunt. Qui tempor cillum Lorem cillum eu id ut amet duis nisi ex. Dolor consequat ullamco veniam id. Enim voluptate dolor incididunt esse cillum laboris labore. Excepteur commodo anim voluptate occaecat proident non et. Non ad incididunt mollit reprehenderit eiusmod enim laboris laborum in id laborum.",
-      "vacancyId": "641df4297a8395d15eb320f1"
-    },
-    {
-      "id": "e81340d7-0be9-4753-b105-a1bb30c44bf4",
-      "date": "2022-02-24T09:17:55.431Z",
-      "stageName": "aliqua",
-      "stageType": "Offer",
-      "notes": "Mollit aliqua id cupidatat sint. Aute nostrud cupidatat sunt voluptate velit et elit reprehenderit tempor. Exercitation amet officia anim Lorem ut ea adipisicing eu exercitation aliquip anim. Est excepteur elit non occaecat cupidatat fugiat enim consectetur Lorem do. Incididunt magna laborum anim amet adipisicing commodo cupidatat in reprehenderit.\n\nDo do fugiat sunt irure ullamco elit. In fugiat do ad mollit ea dolor tempor irure. Ut tempor proident velit quis commodo aute cupidatat consectetur ullamco eu anim Lorem occaecat.",
-      "employmentType": "part-time",
-      "jobStartDate": "2022-08-26T03:45:30.884Z",
-      "proposedCompensation": "$1,429.62",
-      "jobBenefits": "Aliqua proident non irure commodo ut excepteur cupidatat esse minim qui dolore pariatur amet. Mollit voluptate pariatur aliquip dolor reprehenderit officia id sunt magna. Esse proident anim mollit nostrud cupidatat proident magna labore sunt et in ea culpa dolore. Dolor officia aute aliquip culpa dolore.",
-      "vacancyId": "641df4297a8395d15eb320f1"
-    },
-    {
-      "id": "7aaee010-0b2d-48e0-ac4a-2a7a7df5d442",
-      "date": "2022-03-25T18:22:48.927Z",
-      "stageName": "duis",
-      "stageType": "Rejection",
-      "rejectionPersonName": "MaysMoon",
-      "rejectionReason": "non",
-      "rejectionNotes": "Duis Lorem aliquip in minim officia cillum velit amet commodo velit ex dolor laborum. Aliqua non exercitation nisi cillum. Irure minim commodo officia excepteur magna dolore occaecat.",
-      "vacancyId": "c76352fa-e356-4482-aba3-0f199595f553"
-    },
-    {
-      "id": "5742125d-9f6b-4ef1-bfef-32388a1db497",
-      "date": "2022-09-10T12:12:08.981Z",
-      "stageName": "deserunt",
-      "stageType": "Offer",
-      "notes": "Officia ea ea exercitation et. Fugiat irure id excepteur adipisicing. Duis veniam enim aliquip consequat fugiat mollit id velit exercitation eu elit excepteur sit excepteur. Sit ullamco adipisicing id adipisicing ut. Nisi elit dolor quis eu nisi officia. Nostrud enim aliqua cupidatat nostrud irure fugiat non qui proident sunt in quis laborum amet. Elit quis aute sint ad mollit fugiat laboris fugiat nostrud dolore adipisicing nostrud.\n\nEst fugiat ex amet tempor deserunt quis minim. Sit velit sunt amet in. Anim incididunt tempor nulla incididunt ipsum consequat laboris. Quis magna proident eiusmod eu. Nisi cupidatat do tempor ad cillum velit in sint et excepteur.",
-      "employmentType": "casuals",
-      "jobStartDate": "2022-06-20T14:21:10.043Z",
-      "proposedCompensation": "$2,254.94",
-      "jobBenefits": "Consectetur fugiat labore duis deserunt deserunt pariatur adipisicing amet ex ut magna. Consectetur eiusmod enim exercitation consequat. Ex laboris cillum elit adipisicing minim sit non aliqua cupidatat proident esse sit occaecat deserunt. Ut culpa consectetur Lorem fugiat. Anim occaecat cillum incididunt commodo culpa occaecat et ullamco aute ipsum officia anim. Laboris commodo dolore culpa magna dolore culpa laborum anim sit ea.",
-      "vacancyId": "c76352fa-e356-4482-aba3-0f199595f553"
-    },
-    {
-      "id": "5d611fcd-2267-4b64-bed9-bb7b5c6d5dbd",
-      "date": "2022-04-30T04:19:37.702Z",
-      "stageName": "nisi",
-      "stageType": "Rejection",
-      "rejectionPersonName": "PopeGarrison",
-      "rejectionReason": "qui",
-      "rejectionNotes": "Minim duis aute ad ipsum deserunt eu laborum cillum ea ut deserunt ad in mollit. Sunt ullamco laborum Lorem ex ipsum amet. Occaecat ut nisi qui aliqua. Est pariatur cupidatat sit esse. Ea et do non pariatur aliqua eiusmod laboris deserunt esse quis ipsum. Exercitation Lorem aliqua veniam quis. Aute nostrud in nulla nostrud velit dolore.",
-      "vacancyId": "c76352fa-e356-4482-aba3-0f199595f553"
-    },
-    {
-      "id": "d550a37d-7b62-427d-abb7-34b2abbfad5f",
-      "date": "2022-12-14T05:59:28.786Z",
-      "stageName": "exercitation",
-      "stageType": "Rejection",
-      "rejectionPersonName": "BishopFitzpatrick",
-      "rejectionReason": "nostrud",
-      "rejectionNotes": "Exercitation voluptate velit id est ut. Consectetur voluptate esse quis nisi enim et anim in veniam fugiat proident quis. Aliquip labore cillum nisi deserunt ut aute commodo voluptate fugiat officia cillum occaecat. Nisi qui enim excepteur ullamco fugiat non nostrud anim sunt duis. Ut exercitation velit excepteur excepteur proident nisi eu. Aliqua dolor anim tempor exercitation eu magna aute.",
-      "vacancyId": "c76352fa-e356-4482-aba3-0f199595f553"
-    },
-    {
-      "id": "d29e0735-5753-4dde-a567-f8959bb17aea",
-      "date": "2022-08-25T09:40:13.729Z",
-      "stageName": "excepteur",
-      "stageType": "Interview",
-      "interviewType": "Technical",
-      "location": "anim",
-      "interviewerNames": [
-        "FosterHenry"
-      ],
-      "interviewDate": "2022-11-12T09:50:52.846Z",
-      "questionsAndAnswers": [
-        {
-          "question": "dfhg",
-          "answer": "hghdfht"
-        }
-      ],
-      "notes": "Occaecat veniam sit ipsum pariatur do aute sit. Nulla anim dolore et nisi. Do elit enim ullamco ullamco sit deserunt ut dolor magna mollit cillum laboris. Est in do officia sint ad ipsum adipisicing ut. Laboris aliquip labore exercitation id occaecat voluptate consequat laboris nostrud deserunt.",
-      "vacancyId": "c76352fa-e356-4482-aba3-0f199595f553"
-    },
-    {
-      "id": "938bb098-496d-4b98-96c9-5177e56c68f6",
-      "date": "2022-03-02T10:25:44.791Z",
-      "stageName": "exercitation",
-      "stageType": "Offer",
-      "notes": "Sint ad nulla sit labore commodo dolor fugiat ad sint dolor qui aliquip. Voluptate voluptate occaecat in sunt deserunt occaecat. Occaecat et quis dolor nulla commodo. Eu qui ad eu consectetur minim reprehenderit ut labore irure sunt. Cillum esse consectetur non officia. Eu dolore elit mollit voluptate nulla tempor incididunt ea ex commodo ea cupidatat velit. Nisi in qui ex eiusmod fugiat sit nulla laboris voluptate commodo ad ea deserunt.\n\nEiusmod quis aliquip nostrud eiusmod eu anim. Sit culpa ad eu eu officia minim ipsum magna est incididunt laborum esse. Cillum commodo dolor aliqua laboris do et est pariatur nostrud reprehenderit ipsum ea. Aliqua enim ipsum esse voluptate laborum aliquip ex sit voluptate ea incididunt. Commodo mollit voluptate adipisicing culpa.",
-      "employmentType": "full-time",
-      "jobStartDate": "2022-09-20T03:31:33.794Z",
-      "proposedCompensation": "$2,033.69",
-      "jobBenefits": "Ex proident ad eiusmod anim ipsum quis qui cillum et. Officia nulla veniam esse anim fugiat aliquip. Tempor nulla aliqua deserunt labore et dolor exercitation laboris occaecat exercitation fugiat qui eiusmod.",
-      "vacancyId": "c76352fa-e356-4482-aba3-0f199595f553"
+      "rejectionPersonName": "sdfgs",
+      "rejectionReason": "dfdsgs",
+      "rejectionNotes": "gsdgfsdfg",
+      "vacancyId": "641df42931025ceb48cac28d"
     }
   ]
 }

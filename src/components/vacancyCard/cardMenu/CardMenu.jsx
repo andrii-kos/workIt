@@ -30,7 +30,7 @@ const CardMenu = (props) => {
   };
 
   const handleCloseMenu = (event) => {
-    event.stopPropagation();
+    
     setMenuOpen(false);
   };
   const handleCloseDialog = () => {

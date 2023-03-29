@@ -7,10 +7,10 @@ const initialState = {
     fetch: 'iddle',
     post: 'iddle',
     update: 'iddle',
-    delete: 'iddle',
+    remove: 'iddle',
     updateCurrentId: 'iddle'
   },
-  errorMessage: {}
+  errorMessage: ''
   
 }
 
@@ -42,8 +42,8 @@ export const updateVacancy = createAsyncThunk(
   }
 )
 
-export const deleteVacancy = createAsyncThunk(
-  'vacancy/deleteVacancy',
+export const removeVacancy = createAsyncThunk(
+  'vacancy/removeVacancy',
   (id) => {
     const { request } = useHttp();
     return  request(`http://localhost:3000/vacancies/${id}`, 'DELETE')
@@ -104,16 +104,19 @@ const VacancySlice = createSlice({
         state.errorMessage = error;
       })
 
-      .addCase(deleteVacancy.pending, state => {
-        state.status.delete = 'loading';
+      .addCase(removeVacancy.pending, state => {
+        state.status.remove = 'loading';
       })
-      .addCase(deleteVacancy.fulfilled, (state, {meta}) => {
+      .addCase(removeVacancy.fulfilled, (state, {meta}) => {
         state.vacancies = state.vacancies.filter(elem => elem.id !== meta.arg);
-        state.status.delete = 'success';
+        state.status.remove = 'success';
       })
-      .addCase(deleteVacancy.rejected, (state, {error}) => {
-        state.status.delete = 'error';
+      .addCase(removeVacancy.rejected, (state, {error}) => {
+        state.status.remove = 'error';
         state.errorMessage = error;
+      })
+      .addCase(removeVacancy.fulfilled, (state) => {
+        state.status.remove = 'idle';
       })
 
       .addCase(updateCurrentStageId.pending, state => {

@@ -8,9 +8,11 @@ import InterviewCard from '../interviewCard/InterviewCard';
 import OfferCard from '../offerCard/OfferCard';
 import RejectionCard from '../rejectionCard/RejectionCard';
 
+import getArrayItemById from '../../../utils/getArrayItemById';
+
 import StageControl from '../../stageControl/StageControl';
 
-const DetailedCard = ({vacancy, stages, setSelectedCardId, getArrayItemById}) => {
+const DetailedCard = ({vacancy, stages, setSelectedCardId}) => {
   const {
     id,
     vacancyName,
